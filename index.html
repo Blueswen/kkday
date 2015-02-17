@@ -14,12 +14,33 @@
 </head>
 <body class="pushable">
 	<div class="ui sidebar">
-		<ul>
-			<li>a</li>
-			<li>b</li>
-			<li>c</li>
-			<li>d</li>
+		<div id="logo" class="flip">
+			<div class="card">
+				<div class="face front">
+					<img src="img/logo-front.png">
+				</div>
+				<div class="face back">
+					<img src="img/logo-back.png">
+				</div>
+			</div>
+		</div>
+		<ul id="menu-list">
+			<li>
+				<i class="fa fa-graduation-cap"></i> 首頁
+			</li>
+			<li>
+				<i class="fa fa-list-alt"></i> 混搭流行新提案
+			</li>
+			<li>
+				<i class="fa fa-list-alt"></i> 混搭流行新提案
+			</li>
+			<li>
+				<i class="fa fa-list-alt"></i> 混搭流行新提案
+			</li>
 		</ul>
+		<div id="slogan">
+			<img src="img/slogan.png">
+		</div>
 	</div>
 	<div id="menu-button" class="ui fixed menu">
 		<i class="fa fa-bars fa-5x"></i>
@@ -69,6 +90,11 @@
 	<script type="text/javascript">
 	$('#menu-button').click(function(){
 		$('.sidebar').sidebar('toggle');
+	});
+	$(function(){
+		$('.flip').click(function(){
+			$('.card').toggleClass('flipped');
+		});
 	});
 	</script>
 </body>
