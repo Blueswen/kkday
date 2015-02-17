@@ -1,0 +1,53 @@
+section{
+	width: 100%;
+}
+
+#menu-button{
+	cursor: pointer;
+	top: 5%;
+	left: 5%;
+	z-index: 999;
+}
+
+#home{
+	height: 100vh;
+	background: #C1DBE3;
+	font-size: 5em;
+	text-align: center;
+}
+
+.title{
+	font-size: 5em;
+	text-align: center;	
+}
+
+/*index*/
+
+#lab-copy{
+	height: 100vh;
+	font-size: 1.5em;
+	background: #8A8E8E;
+}
+
+#kk-info{
+	height: 100vh;	
+	font-size: 1.5em;
+}
+
+#kk-video{
+	
+}
+
+#feature{
+	font-size: 1.5em;
+	text-align: center;
+}
+
+.feature-card{
+	padding: 30px;	
+}
+/*recruit*/
+
+/*graduation*/
+
+/*lab*/
