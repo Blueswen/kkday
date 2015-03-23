@@ -1,5 +1,10 @@
 section{
 	width: 100%;
+	padding: 50px 0;
+}
+
+.container-fluid{
+	padding: 0px;
 }
 
 #menu-button{
@@ -7,47 +12,134 @@ section{
 	top: 5%;
 	left: 5%;
 	z-index: 999;
+	font-size: 1.5em;
 }
 
 #home{
-	height: 100vh;
-	background: #C1DBE3;
-	font-size: 5em;
+	height: 800px;
+	background: #26BEC9;
 	text-align: center;
 }
 
 .title{
-	font-size: 5em;
-	text-align: center;	
+	font-size: 2.1875rem;
+	text-align: center;
+	font-weight: 700;	
+	letter-spacing: 1.75px;
+	padding-bottom: 50px;
 }
 
 /*index*/
 
-#lab-copy{
-	height: 100vh;
-	font-size: 1.5em;
-	background: #8A8E8E;
+.content{
+	font-size: 1.125rem;
+	text-align: center;
+	letter-spacing: 2.7px;
+	line-height: 21.6px;
 }
 
-#kk-info{
-	height: 100vh;	
-	font-size: 1.5em;
-}
-
-#kk-video{
-	
+#info{
+	background: #DAE4E9;
 }
 
 #feature{
-	font-size: 1.5em;
-	text-align: center;
+	background: white;
+	padding-bottom: 0px !important;
 }
 
 .feature-card{
-	padding: 30px;	
+	padding: 50px;
+	color: white;
+	height: 400px;
+}
+
+@media (max-width: 768px) {
+	.feature-card{
+		margin-bottom: 25px;
+	}
+}
+
+#go{
+	text-align: center;
+	height: 200px;
+	background: white;
+	padding-top: 80px
+}
+
+#gobutton{
+	cursor: pointer;
+	background: #26BEC9;
+	font-size: 24px;
+	border-radius: 5px;
+	padding: 10px 20px;
+	color: white;
 }
 /*recruit*/
 
 /*graduation*/
 
 /*lab*/
+
+/*left menu*/
+
+#logo img{
+	width: 100%;
+}
+
+.flip {
+  -webkit-perspective: 800;
+ 	height: 225px;
+  position: relative;
+}
+.flip .card.flipped {
+  -webkit-transform: rotatey(-180deg);
+}
+.flip .card {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  -webkit-transform-style: preserve-3d;
+  -webkit-transition: 0.5s;
+}
+.flip .card .face {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -webkit-backface-visibility: hidden ;
+  z-index: 2;
+}
+.flip .card .front {
+  position: absolute;
+  z-index: 1;
+  cursor: pointer;
+}
+.flip .card .back {
+  -webkit-transform: rotatey(-180deg);
+  cursor: pointer;
+}
+
+#menu-list {
+	padding: 0px;
+}
+
+#menu-list li{
+	list-style: none;
+	color: white;
+	height: 40px;
+	padding: 5px 20px 0px;
+	font-size: 1.5em;
+	cursor: pointer;
+}
+
+#menu-list li:hover{
+	background: #26BEC9;
+}
+
+#slogan {
+	position: fixed;
+	bottom: 0px;
+}
+
+#slogan img{
+	width: 100%;
+}
