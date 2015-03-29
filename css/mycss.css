@@ -12,7 +12,7 @@ section{
 	top: 5%;
 	left: 5%;
 	z-index: 999;
-	font-size: 1.5em;
+	font-size: 1.5rem;
 }
 
 #home{
@@ -22,20 +22,20 @@ section{
 }
 
 .title{
-	font-size: 3.75rem;
+	font-size: 35px;
 	text-align: center;
 	font-weight: 700;	
-	letter-spacing: 0.1875rem;
+	letter-spacing: 1.75px;
 	padding-bottom: 50px;
 }
 
 /*index*/
 
 .content{
-	font-size: 1.875rem;
+	font-size: 18px;
 	text-align: center;
-	letter-spacing: 0.28125rem;
-	line-height: 2.25rem;
+	letter-spacing: 2.7px;
+	line-height: 27px;
 }
 
 #info{
@@ -50,7 +50,7 @@ section{
 .feature-card{
 	padding: 50px;
 	color: white;
-	height: 400px;
+	min-height: 400px;
 }
 
 @media (max-width: 768px) {
@@ -127,7 +127,7 @@ section{
 	color: white;
 	height: 40px;
 	padding: 5px 20px 0px;
-	font-size: 1.5em;
+	font-size: 1.5rem;
 	cursor: pointer;
 }
 

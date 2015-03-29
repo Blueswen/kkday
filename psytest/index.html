@@ -28,6 +28,14 @@
 			
 			
 		}
+		#startbtn{
+			background: #26BEC9;
+			border-radius: 5px;
+			border: 1px ;
+			cursor: pointer;
+			padding: 5px 10px;
+			font-size: 35px; 
+		}
 		.pic{
 			height: 80px;
 		}
@@ -45,29 +53,57 @@
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-xs-12 col-sm-push-1 col-sm-10 col-md-push-3 col-md-6">
-				<div id="que" class="block">
+				<div id="start" class="block">
+					<h3>〖測驗名稱〗</h3>
+					<p>【KKday旅行診斷室】一生只有一次！原來我的理想畢旅在這裡？！</p>
+					<p>分享測驗結果就有機會獲得台灣虎航來回機票與KKday local tour旅行基金！</p>
+					<h3>〖測驗描述〗</h3>
+					<p>誰說畢業旅行是大學生活的句點？</p>
+					<p>快來測測哪裡是你的理想畢旅目的地，</p>
+					<p>然後……出發吧！</p>
+					<p>和那些走過四年的兄弟和閨蜜，</p>
+					<p>創造值得再三回味的美好記憶！</p>
+					<p>如果一生只有一次，當然什麼都值得一試，</p>
+					<p>在KKday混搭連當地人都推薦的私房local tour，</p>
+					<p>用最精彩的在地體驗，</p>
+					<p>為你的畢旅畫下與眾不同的驚嘆號！</p>
+					<h3>〖活動獎勵〗</h3>
+					<p>台灣虎航來回機票與KKday新台幣2,000元旅行基金共四份</p>
+					<p>（皆為曼谷、東京、澳門、新加坡各一份）</p>
+					<h3>〖活動辦法〗</h3>
+					<p>Step1－參加【旅行診斷室——我的理想畢旅目的地】心理測驗</p>
+					<p>Step2－將測驗結果分享至Facebook，並將貼文設為「公開」</p>
+					<p>Step3－留下你的姓名、電話與信箱以利得獎之後續聯絡事宜</p>
+					<p>即日起至4月＿日止，完成以上步驟，就有就有機會前往你的理想畢旅目的地，</p>
+					<p>獲得測驗結果國家的「台灣虎航機票」以及「KKday旅行基金2,000元」！</p>
+					<div style="text-align:center;">
+						<span id="startbtn">Start</span>
+					</div>
+				</div>
+				<div id="que" class="block" style="display:none">
 					
 				</div>
 				<div class="row">
 					<div class="col-xs-6 col-sm-6">
-						<div id="ans1-p" class="pic block">
+						<div id="ans1-p" class="pic block" style="display:none">
 							圖檔
 						</div>
-						<div id="ans1" class="ans block">
+						<div id="ans1" class="ans block" style="display:none">
 							
 						</div>	
 					</div>
 					<div class="col-xs-6 col-sm-6">
-						<div id="ans2-p" class="pic block">
+						<div id="ans2-p" class="pic block" style="display:none">
 							圖檔
 						</div>
-						<div id="ans2" class="ans block">
+						<div id="ans2" class="ans block" style="display:none">
 						
 						</div>	
 					</div>
 				</div>
 				<div id="e1" class="end block" style="display:none">
 					泰國
+					<div class="fb-share-button" data-href="http://blueswen.github.io/kkday/psytest/" data-layout="button"></div>
 				</div>
 				<div id="e2" class="end block" style="display:none">
 					星馬
@@ -81,6 +117,14 @@
 			</div>
 		</div>
 	</div>
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&appId=444444312396465&version=v2.3";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
 	<script type="text/javascript">
 		var data=[
 			{
@@ -120,9 +164,6 @@
 			}
 		]
 		var cur = 0;
-		$(function(){
-			update();
-		});
 		function update() {
 			if(!isNaN(cur)){
 				$("#que").html(data[cur].q.text);
@@ -139,6 +180,13 @@
 				$(".pic").css("display","none");
 			}
 		}
+		$("#startbtn").click(function() {
+			$("#start").css("display","none");
+			$("#que").css("display","");
+			$(".ans").css("display","");
+			$(".pic").css("display","");
+			update();
+		});
 		$("#ans1").click(function(){
 			cur = data[cur].a1.to;
 			update();
