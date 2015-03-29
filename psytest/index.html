@@ -3,6 +3,12 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta property="og:title" content="我是標題" />  
+	<meta property="og:type" content="article" />  
+	<meta property="og:url" content="url" />  
+	<meta property="og:image" content="images" />  
+	<meta property="og:site_name" content=""/>  
+	<meta property="og:description" content=""/>
 	<title>心理測驗</title>
 	<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
@@ -22,6 +28,9 @@
 			
 			
 		}
+		.pic{
+			height: 80px;
+		}
 		.ans{
 			cursor: pointer;
 		}
@@ -39,23 +48,35 @@
 				<div id="que" class="block">
 					
 				</div>
-				<div id="ans1" class="ans block">
-					
-				</div>
-				<div id="ans2" class="ans block">
-					
+				<div class="row">
+					<div class="col-xs-6 col-sm-6">
+						<div id="ans1-p" class="pic block">
+							圖檔
+						</div>
+						<div id="ans1" class="ans block">
+							
+						</div>	
+					</div>
+					<div class="col-xs-6 col-sm-6">
+						<div id="ans2-p" class="pic block">
+							圖檔
+						</div>
+						<div id="ans2" class="ans block">
+						
+						</div>	
+					</div>
 				</div>
 				<div id="e1" class="end block" style="display:none">
-					結果１
+					泰國
 				</div>
 				<div id="e2" class="end block" style="display:none">
-					結果２
+					星馬
 				</div>
 				<div id="e3" class="end block" style="display:none">
-					結果３
+					港澳
 				</div>
 				<div id="e4" class="end block" style="display:none">
-					結果４
+					日本
 				</div>
 			</div>
 		</div>
@@ -63,39 +84,39 @@
 	<script type="text/javascript">
 		var data=[
 			{
-				q:{text:"是家小票說前為受已我：風有方：大立生？因學話南結室品出兩、當難設：她爭一是將車利得、戲長校背生市謝境議數超的子較不底小黨水的己們步都子動各天日木論於一天民明電：電不裝史保冷不裡年風空到驚的上達不小男食統了，中學大氣做不起可非總場密校！"},
-				a1:{text:"a1",to:1},
-				a2:{text:"a2",to:2}
+				q:{text:"下課小睡一下，一覺醒來，突然發現自己處在一個陌生的地方，你／妳一睜開眼看到的景色是……"},
+				a1:{text:"城市霓虹",img:"",to:1},
+				a2:{text:"熱帶海灘",img:"",to:4}
 			},
 			{
-				q:{text:"是家小票說前為受已我：風有方：大立生？因學話南結室品出兩、當難設：她爭一是將車利得、戲長校背生市謝境議數超的子較不底小黨水的己們步都子動各天日木論於一天民明電：電不裝史保冷不裡年風空到驚的上達不小男食統了，中學大氣做不起可非總場密校！"},
-				a1:{text:"a1",to:3},
-				a2:{text:"a2",to:3}
+				q:{text:"手上握著遊樂園門票，最期待等等看見……？"},
+				a1:{text:"馬達加斯加的狐猴國王朱利安",img:"",to:2},
+				a2:{text:"百畝森林的跳跳虎和小熊維尼",img:"",to:2}
 			},
 			{
-				q:{text:"是家小票說前為受已我：風有方：大立生？因學話南結室品出兩、當難設：她爭一是將車利得、戲長校背生市謝境議數超的子較不底小黨水的己們步都子動各天日木論於一天民明電：電不裝史保冷不裡年風空到驚的上達不小男食統了，中學大氣做不起可非總場密校！"},
-				a1:{text:"a1",to:4},
-				a2:{text:"a2",to:4}
+				q:{text:"朋友驚喜地拍拍你的肩，在你耳邊悄悄說……？"},
+				a1:{text:"天啊！是河童耶！",img:"",to:3},
+				a2:{text:"天啊！是馬來貘耶！",img:"",to:3}
 			},
 			{
-				q:{text:"是家小票說前為受已我：風有方：大立生？因學話南結室品出兩、當難設：她爭一是將車利得、戲長校背生市謝境議數超的子較不底小黨水的己們步都子動各天日木論於一天民明電：電不裝史保冷不裡年風空到驚的上達不小男食統了，中學大氣做不起可非總場密校！"},
-				a1:{text:"a1",to:5},
-				a2:{text:"a2",to:5}
+				q:{text:"走在傳統市集的巷弄之間，傳來一陣香料氣息，啊～原來是……？"},
+				a1:{text:"綠咖哩",img:"",to:"e1"},
+				a2:{text:"肉骨茶",img:"",to:"e2"}
 			},
 			{
-				q:{text:"是家小票說前為受已我：風有方：大立生？因學話南結室品出兩、當難設：她爭一是將車利得、戲長校背生市謝境議數超的子較不底小黨水的己們步都子動各天日木論於一天民明電：電不裝史保冷不裡年風空到驚的上達不小男食統了，中學大氣做不起可非總場密校！"},
-				a1:{text:"a1",to:6},
-				a2:{text:"a2",to:6}
+				q:{text:"夏日來臨，一定要去參加熱鬧的祭典，你最期待的活動是……？"},
+				a1:{text:"互相潑水賀新年",img:"",to:5},
+				a2:{text:"穿浴衣去花火節",img:"",to:5}
 			},
 			{
-				q:{text:"是家小票說前為受已我：風有方：大立生？因學話南結室品出兩、當難設：她爭一是將車利得、戲長校背生市謝境議數超的子較不底小黨水的己們步都子動各天日木論於一天民明電：電不裝史保冷不裡年風空到驚的上達不小男食統了，中學大氣做不起可非總場密校！"},
-				a1:{text:"a1",to:"e1"},
-				a2:{text:"a2",to:"e2"}
+				q:{text:"搭在船上悠閒享受美景，兩旁盡是……？"},
+				a1:{text:"英／葡水岸燈火夜色",img:"",to:6},
+				a2:{text:"東方威尼斯水上市集",img:"",to:6}
 			},
 			{
-				q:{text:"是家小票說前為受已我：風有方：大立生？因學話南結室品出兩、當難設：她爭一是將車利得、戲長校背生市謝境議數超的子較不底小黨水的己們步都子動各天日木論於一天民明電：電不裝史保冷不裡年風空到驚的上達不小男食統了，中學大氣做不起可非總場密校！"},
-				a1:{text:"a1",to:"e3"},
-				a2:{text:"a2",to:"e4"}
+				q:{text:"在飯店房間洗澡洗到一半，突然聽到一陣聲響，……？"},
+				a1:{text:"「砰－砰砰－砰砰砰」，天啊！隔壁房傳來槍擊聲！",img:"",to:"e3"},
+				a2:{text:"「啪擦－滋－滋滋」，電視怎麼……自己……打開了……",img:"",to:"e4"}
 			}
 		]
 		var cur = 0;
@@ -106,14 +127,16 @@
 			if(!isNaN(cur)){
 				$("#que").html(data[cur].q.text);
 				$("#ans1").html(data[cur].a1.text);
-				$("#ans2").html(data[cur].a2.text);	
+				$("#ans2").html(data[cur].a2.text);
+				//$("#ans1-p").html('<img src="data[cur].a1.img">');
+				//$("#ans2-p").html('<img src="data[cur].a2.img">');	
 				console.log(cur);
 			}
 			else{
-				alert(cur);
 				$("#"+cur).css("display","");
 				$("#que").css("display","none");
 				$(".ans").css("display","none");
+				$(".pic").css("display","none");
 			}
 		}
 		$("#ans1").click(function(){
