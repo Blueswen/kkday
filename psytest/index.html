@@ -103,32 +103,56 @@
 				</div>
 				<div id="e1" class="end block" style="display:none">
 					泰國
-					<div class="fb-share-button" data-href="http://blueswen.github.io/kkday/psytest/" data-layout="button"></div>
 				</div>
 				<div id="e2" class="end block" style="display:none">
 					星馬
-					<div class="fb-share-button" data-href="http://blueswen.github.io/kkday/psytest/" data-layout="button"></div>
 				</div>
 				<div id="e3" class="end block" style="display:none">
 					港澳
-					<div class="fb-share-button" data-href="http://blueswen.github.io/kkday/psytest/" data-layout="button"></div>
 				</div>
 				<div id="e4" class="end block" style="display:none">
 					日本
-					<div class="fb-share-button" data-href="http://blueswen.github.io/kkday/psytest/" data-layout="button"></div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div id="fb-root"></div>
-	<script>(function(d, s, id) {
-	  var js, fjs = d.getElementsByTagName(s)[0];
-	  if (d.getElementById(id)) return;
-	  js = d.createElement(s); js.id = id;
-	  js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&appId=444444312396465&version=v2.3";
-	  fjs.parentNode.insertBefore(js, fjs);
-	}(document, 'script', 'facebook-jssdk'));</script>
 	<script type="text/javascript">
+		window.fbAsyncInit = function() {
+      FB.init({
+        appId      : 'your-app-id',
+        xfbml      : true,
+        version    : 'v2.3'
+      });
+    };
+
+    (function(d, s, id){
+       var js, fjs = d.getElementsByTagName(s)[0];
+       if (d.getElementById(id)) {return;}
+       js = d.createElement(s); js.id = id;
+       js.src = "//connect.facebook.net/en_US/sdk.js";
+       fjs.parentNode.insertBefore(js, fjs);
+     }(document, 'script', 'facebook-jssdk'));
+		$(function(){
+			FB.init({
+			  appId      : '444444312396465',
+			  status     : true,
+			  xfbml      : true,
+			  version    : 'v2.0'
+			});
+			FB.ui(
+			  {
+			    method: 'share',
+			    href: 'https://developers.facebook.com/docs/',
+			  },
+			  function(response) {
+			    if (response && !response.error_code) {
+			      alert('Posting completed.');
+			    } else {
+			      alert('Error while posting.');
+			    }
+			  }
+			);
+		})
 		var data=[
 			{
 				q:{text:"下課小睡一下，一覺醒來，突然發現自己處在一個陌生的地方，你／妳一睜開眼看到的景色是……"},
