@@ -125,7 +125,7 @@
 					日本
 					<span class="fb-share-button">分享</span>
 				</div>
-				<div>
+				<div id="form">
 					<form action="https://docs.google.com/forms/d/1sGTwxHYhp4jm8hOwHn6jdIlk0hQ_1nGqLMIPYXtqw4w/formResponse" method="POST" id="ss-form" target="_self" onsubmit="">
 						<input type="text" name="entry.812490959" value="" class="ss-q-short required" id="entry_812490959" dir="auto" aria-label="姓名  " aria-required="true" required="" title="">
 						<input type="date" name="entry.1852633594" value="" class="ss-q-date" dir="auto" id="entry_1852633594" aria-label="生日  " aria-required="true" required="">
@@ -230,7 +230,7 @@
 		    },
 		    function(response) {
 		        if (response && !response.error_code) {
-		          alert('Posting completed.');
+		          console.log(response)
 		        } else {
 		          alert('Error while posting.');
 		        }
