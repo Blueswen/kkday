@@ -36,6 +36,14 @@
 			padding: 5px 10px;
 			font-size: 35px; 
 		}
+		.fb-share-button{
+			background: #3b5998;
+			border-radius: 5px;
+			border: 1px ;
+			cursor: pointer;
+			padding: 5px 10px;
+			font-size: 35px; 	
+		}
 		.pic{
 			height: 80px;
 		}
@@ -103,15 +111,19 @@
 				</div>
 				<div id="e1" class="end block" style="display:none">
 					泰國
+					<span class="fb-share-button">分享</span>
 				</div>
 				<div id="e2" class="end block" style="display:none">
 					星馬
+					<span class="fb-share-button">分享</span>
 				</div>
 				<div id="e3" class="end block" style="display:none">
 					港澳
+					<span class="fb-share-button">分享</span>
 				</div>
 				<div id="e4" class="end block" style="display:none">
 					日本
+					<span class="fb-share-button">分享</span>
 				</div>
 			</div>
 		</div>
@@ -200,6 +212,20 @@
 		$("#ans2").click(function(){
 			cur = data[cur].a2.to;
 			update();
+		});
+		$(".fb-share-button").click(function(){
+		    FB.ui(
+		    {
+		        method: 'share',
+		        href: document.URL,
+		    },
+		    function(response) {
+		        if (response && !response.error_code) {
+		          alert('Posting completed.');
+		        } else {
+		          alert('Error while posting.');
+		        }
+		    });
 		});
 	</script>
 </body>
