@@ -119,7 +119,7 @@
 	<script type="text/javascript">
 		window.fbAsyncInit = function() {
       FB.init({
-        appId      : 'your-app-id',
+        appId      : 444444312396465,
         xfbml      : true,
         version    : 'v2.3'
       });
@@ -132,27 +132,6 @@
        js.src = "//connect.facebook.net/en_US/sdk.js";
        fjs.parentNode.insertBefore(js, fjs);
      }(document, 'script', 'facebook-jssdk'));
-		$(function(){
-			FB.init({
-			  appId      : '444444312396465',
-			  status     : true,
-			  xfbml      : true,
-			  version    : 'v2.0'
-			});
-			FB.ui(
-			  {
-			    method: 'share',
-			    href: 'https://developers.facebook.com/docs/',
-			  },
-			  function(response) {
-			    if (response && !response.error_code) {
-			      alert('Posting completed.');
-			    } else {
-			      alert('Error while posting.');
-			    }
-			  }
-			);
-		})
 		var data=[
 			{
 				q:{text:"下課小睡一下，一覺醒來，突然發現自己處在一個陌生的地方，你／妳一睜開眼看到的景色是……"},
