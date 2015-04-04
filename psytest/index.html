@@ -16,7 +16,10 @@
 	<style type="text/css">
 		body{
 			font-size: 18px;
-			padding: 30px 0;
+			background: #f3e891;
+		}
+		.main{
+
 		}
 		.block{
 			border-radius: 3px;
@@ -24,17 +27,31 @@
 			padding: 10px;
 			margin: 10px;
 		}
+		#start{
+			text-align: center;
+		}
+		#question{
+
+		}
 		#que{
-			
-			
+			position: absolute;
+		  top: 30%;
+		  left: 0;
+		  width: 70%;
+		  margin: 0 15%;
+		}
+		#ansblock{
+			position: absolute;
+		  top: 50%%;
+		  left: 0;
+		  width: 70%;
+		  margin: 0 15%;
 		}
 		#startbtn{
-			background: #26BEC9;
-			border-radius: 5px;
-			border: 1px ;
-			cursor: pointer;
-			padding: 5px 10px;
-			font-size: 35px; 
+			width: 30%;
+		  position: absolute;
+		  top: 45%;
+		  left: 58%;
 		}
 		.fb-share-button{
 			background: #3b5998;
@@ -60,53 +77,34 @@
 <body>
 	<div class="container-fluid">
 		<div class="row">
-			<div class="col-xs-12 col-sm-push-1 col-sm-10 col-md-push-3 col-md-6">
-				<div id="start" class="block">
-					<h3>〖測驗名稱〗</h3>
-					<p>【KKday旅行診斷室】一生只有一次！原來我的理想畢旅在這裡？！</p>
-					<p>分享測驗結果就有機會獲得台灣虎航來回機票與KKday local tour旅行基金！</p>
-					<h3>〖測驗描述〗</h3>
-					<p>誰說畢業旅行是大學生活的句點？</p>
-					<p>快來測測哪裡是你的理想畢旅目的地，</p>
-					<p>然後……出發吧！</p>
-					<p>和那些走過四年的兄弟和閨蜜，</p>
-					<p>創造值得再三回味的美好記憶！</p>
-					<p>如果一生只有一次，當然什麼都值得一試，</p>
-					<p>在KKday混搭連當地人都推薦的私房local tour，</p>
-					<p>用最精彩的在地體驗，</p>
-					<p>為你的畢旅畫下與眾不同的驚嘆號！</p>
-					<h3>〖活動獎勵〗</h3>
-					<p>台灣虎航來回機票與KKday新台幣2,000元旅行基金共四份</p>
-					<p>（皆為曼谷、東京、澳門、新加坡各一份）</p>
-					<h3>〖活動辦法〗</h3>
-					<p>Step1－參加【旅行診斷室——我的理想畢旅目的地】心理測驗</p>
-					<p>Step2－將測驗結果分享至Facebook，並將貼文設為「公開」</p>
-					<p>Step3－留下你的姓名、電話與信箱以利得獎之後續聯絡事宜</p>
-					<p>即日起至4月＿日止，完成以上步驟，就有就有機會前往你的理想畢旅目的地，</p>
-					<p>獲得測驗結果國家的「台灣虎航機票」以及「KKday旅行基金2,000元」！</p>
-					<div style="text-align:center;">
-						<span id="startbtn">Start</span>
-					</div>
+			<div class="col-xs-12 col-sm-push-2 col-sm-8 col-md-push-2 col-md-8 main">
+				<div id="start">
+					<img src="img/logo.png" width="40%">
+					<img src="img/start.png" width="100%">
+					<img id="startbtn" src="img/start-btn.png">
 				</div>
-				<div id="que" class="block" style="display:none">
-					
-				</div>
-				<div class="row">
-					<div class="col-xs-6 col-sm-6">
-						<div id="ans1-p" class="pic block" style="display:none">
-							圖檔
-						</div>
-						<div id="ans1" class="ans block" style="display:none">
-							
-						</div>	
-					</div>
-					<div class="col-xs-6 col-sm-6">
-						<div id="ans2-p" class="pic block" style="display:none">
-							圖檔
-						</div>
-						<div id="ans2" class="ans block" style="display:none">
+				<div id="question" style="display:none">
+					<img src="img/back.png" width="100%">
+					<div id="que" class="block">
 						
-						</div>	
+					</div>
+					<div class="row" id="ansblock">
+						<div class="col-xs-6 col-sm-6">
+							<div id="ans1-p" class="pic block">
+								圖檔
+							</div>
+							<div id="ans1" class="ans block">
+								
+							</div>	
+						</div>
+						<div class="col-xs-6 col-sm-6">
+							<div id="ans2-p" class="pic block">
+								圖檔
+							</div>
+							<div id="ans2" class="ans block">
+							
+							</div>	
+						</div>
 					</div>
 				</div>
 				<div id="e1" class="end block" style="display:none">
@@ -125,7 +123,7 @@
 					日本
 					<span class="fb-share-button">分享</span>
 				</div>
-				<div id="form">
+				<div id="form" style="display:none">
 					<form action="https://docs.google.com/forms/d/1sGTwxHYhp4jm8hOwHn6jdIlk0hQ_1nGqLMIPYXtqw4w/formResponse" method="POST" id="ss-form" target="_self" onsubmit="">
 						<input type="text" name="entry.812490959" value="" class="ss-q-short required" id="entry_812490959" dir="auto" aria-label="姓名  " aria-required="true" required="" title="">
 						<input type="date" name="entry.1852633594" value="" class="ss-q-date" dir="auto" id="entry_1852633594" aria-label="生日  " aria-required="true" required="">
@@ -138,6 +136,7 @@
 		</div>
 	</div>
 	<script type="text/javascript">
+	/*
 		window.fbAsyncInit = function() {
       FB.init({
         appId      : 444444312396465,
@@ -155,7 +154,7 @@
         }
       }, {scope: 'publish_actions'});
     };
-
+	*/
     (function(d, s, id){
        var js, fjs = d.getElementsByTagName(s)[0];
        if (d.getElementById(id)) {return;}
@@ -212,15 +211,17 @@
 			}
 			else{
 				$("#"+cur).css("display","");
-				$("#que").css("display","none");
-				$(".ans").css("display","none");
+				//$("#que").css("display","none");
+				//$(".ans").css("display","none");
+				$("#question").css("display","none");
 				$(".pic").css("display","none");
 			}
 		}
 		$("#startbtn").click(function() {
 			$("#start").css("display","none");
-			$("#que").css("display","");
-			$(".ans").css("display","");
+			//$("#que").css("display","");
+			//$(".ans").css("display","");
+			$("#question").css("display","");
 			$(".pic").css("display","");
 			update();
 		});
