@@ -90,20 +90,14 @@
 					</div>
 					<div class="row" id="ansblock">
 						<div class="col-xs-6 col-sm-6">
-							<div id="ans1-p" class="pic block">
-								圖檔
-							</div>
 							<div id="ans1" class="ans block">
 								
 							</div>	
 						</div>
 						<div class="col-xs-6 col-sm-6">
-							<div id="ans2-p" class="pic block">
-								圖檔
-							</div>
 							<div id="ans2" class="ans block">
-							
-							</div>	
+								
+							</div>
 						</div>
 					</div>
 				</div>
@@ -234,6 +228,23 @@
 			update();
 		});
 		$(".fb-share-button").click(function(){
+				window.fbAsyncInit = function() {
+		      FB.init({
+		        appId      : 444444312396465,
+		        xfbml      : true,
+		        version    : 'v2.3'
+		      });
+		      FB.login(function(response) {
+		        if (response.authResponse) {
+		          console.log('Welcome!  Fetching your information.... ');
+		          FB.api('/me', function(response) {
+		            console.log('Good to see you, ' + response.name + '.');
+		          });
+		        } else {
+		          console.log('User cancelled login or did not fully authorize.');
+		        }
+		      }, {scope: 'publish_actions'});
+		    };
 		    FB.ui(
 		    {
 		        method: 'share',
