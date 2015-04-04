@@ -228,7 +228,7 @@
 			update();
 		});
 		$(".fb-share-button").click(function(){
-				window.fbAsyncInit = function() {
+				
 		      FB.init({
 		        appId      : 444444312396465,
 		        xfbml      : true,
@@ -244,7 +244,7 @@
 		          console.log('User cancelled login or did not fully authorize.');
 		        }
 		      }, {scope: 'publish_actions'});
-		    };
+		    
 		    FB.ui(
 		    {
 		        method: 'share',
