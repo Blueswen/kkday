@@ -11,6 +11,7 @@
 	<meta property="og:description" content=""/>
 	<title>心理測驗</title>
 	<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="../css/font-awesome.css">
 	<style type="text/css">
@@ -55,14 +56,6 @@
 		  left: 58%;
 		  cursor: pointer;
 		}
-		.fb-share-button{
-			background: #3b5998;
-			border-radius: 5px;
-			border: 1px ;
-			cursor: pointer;
-			padding: 5px 10px;
-			font-size: 35px; 	
-		}
 		.pic{
 			height: 80px;
 		}
@@ -84,19 +77,17 @@
 		  left: 50%;
 		  width: 40%;
 		}
-		.end-link-1{
-			cursor: pointer;
-		  position: absolute;
-		  top: 55%;
-		  width: 80%;
-		  left: 10%;
-		}
-		.end-link-2{
-			cursor: pointer;
+		.end-linkmap{
 			position: absolute;
-		  top: 70%;
-		  width: 80%;
-		  left: 10%;
+		  width: 74%;
+		  top: 58%;
+		  left: 13%;
+		}
+		.end-air{
+		  position: absolute;
+		  top: 78%;
+		  width: 15%;
+		  left: 72%;
 		}
 		.end-share{
 			cursor: pointer;
@@ -105,13 +96,7 @@
 			left: 50%;
 			height: 4%;
 		}
-		.end-home{
-			cursor: pointer;
-			position: absolute;
-		  top: 52%;
-		  left: 50%;
-		  height: 4%;
-		}
+
 	</style>
 </head>
 <body>
@@ -142,52 +127,66 @@
 				</div>
 				<div id="e1" class="end" style="display:none">
 					<img src="img/end-back.png" width="100%">
-					<img src="img/tl01.png" class="end-info">
-					<img src="img/tl02.png" class="end-link-1">
-					<img src="img/tl03.png" class="end-link-2">
-					<img src="img/tl04.png" class="end-map">
-					<img src="img/share.png" class="end-share">
-					<img src="img/home.png" class="end-home">
+					<img src="img/tl01.png" class="end-map">
+					<img src="img/tl02.png" class="end-info">
+					<img src="img/tl03.png" class="end-linkmap">
+					<img src="img/tl04.png" class="end-air">
+					<img src="img/share.png" class="end-share" data-toggle="modal" data-target="#myModal">
 				</div>
 				<div id="e2" class="end" style="display:none">
 					<img src="img/end-back.png" width="100%">
-					<img src="img/sp01.png" class="end-info">
-					<img src="img/sp02.png" class="end-link-1">
-					<img src="img/sp03.png" class="end-link-2">
-					<img src="img/sp04.png" class="end-map">
+					<img src="img/sp01.png" class="end-map">
+					<img src="img/sp02.png" class="end-info">
+					<img src="img/sp03.png" class="end-linkmap">
+					<img src="img/sp04.png" class="end-air">
 					<img src="img/share.png" class="end-share">
-					<img src="img/home.png" class="end-home">
 				</div>
 				<div id="e3" class="end" style="display:none">
 					<img src="img/end-back.png" width="100%">
-					<img src="img/hk01.png" class="end-info">
-					<img src="img/hk02.png" class="end-link-1">
-					<img src="img/hk03.png" class="end-link-2">
-					<img src="img/hk04.png" class="end-map">
+					<img src="img/hk01.png" class="end-map">
+					<img src="img/hk02.png" class="end-info">
+					<img src="img/hk03.png" class="end-linkmap">
+					<img src="img/hk04.png" class="end-air">
 					<img src="img/share.png" class="end-share">
-					<img src="img/home.png" class="end-home">
 				</div>
 				<div id="e4" class="end" style="display:none">
 					<img src="img/end-back.png" width="100%">
-					<img src="img/jp01.png" class="end-info">
-					<img src="img/jp02.png" class="end-link-1">
-					<img src="img/jp03.png" class="end-link-2">
-					<img src="img/jp04.png" class="end-map">
+					<img src="img/jp01.png" class="end-map">
+					<img src="img/jp02.png" class="end-info">
+					<img src="img/jp03.png" class="end-linkmap">
+					<img src="img/jp04.png" class="end-air">
 					<img src="img/share.png" class="end-share">
-					<img src="img/home.png" class="end-home">
 				</div>
-				<div id="form" style="display:none">
-					<form action="https://docs.google.com/forms/d/1sGTwxHYhp4jm8hOwHn6jdIlk0hQ_1nGqLMIPYXtqw4w/formResponse" method="POST" id="ss-form" target="_self" onsubmit="">
-						<input type="text" name="entry.812490959" value="" class="ss-q-short required" id="entry_812490959" dir="auto" aria-label="姓名  " aria-required="true" required="" title="">
-						<input type="date" name="entry.1852633594" value="" class="ss-q-date" dir="auto" id="entry_1852633594" aria-label="生日  " aria-required="true" required="">
-						<input type="text" name="entry.899744303" value="" class="ss-q-short required" id="entry_899744303" dir="auto" aria-label="手機號碼  " aria-required="true" required="" title="">
-						<input type="text" name="entry.331007657" value="" class="ss-q-short required" id="entry_331007657" dir="auto" aria-label="Email  " aria-required="true" required="" title="">
-						<input type="submit" name="submit" value="提交" id="ss-submit" class="jfk-button jfk-button-action ">
-					</form>
+				<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				  <div class="modal-dialog">
+				    <div class="modal-content">
+				      <div class="modal-body">
+				        <h3>記得設定成公開分享</h3>
+				        <div class="fb-share-button" id="sharebtn" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button"></div>
+				        <div id="form" style="display:none">
+				        	<form action="https://docs.google.com/forms/d/1sGTwxHYhp4jm8hOwHn6jdIlk0hQ_1nGqLMIPYXtqw4w/formResponse" method="POST" id="ss-form" target="_self" onsubmit="">
+				        		<input type="text" name="entry.812490959" value="" class="ss-q-short required" id="entry_812490959" dir="auto" aria-label="姓名  " aria-required="true" required="" title="">
+				        		<input type="date" name="entry.1852633594" value="" class="ss-q-date" dir="auto" id="entry_1852633594" aria-label="生日  " aria-required="true" required="">
+				        		<input type="text" name="entry.899744303" value="" class="ss-q-short required" id="entry_899744303" dir="auto" aria-label="手機號碼  " aria-required="true" required="" title="">
+				        		<input type="text" name="entry.331007657" value="" class="ss-q-short required" id="entry_331007657" dir="auto" aria-label="Email  " aria-required="true" required="" title="">
+				        		<input type="submit" name="submit" value="提交" id="ss-submit" class="jfk-button jfk-button-action ">
+				        	</form>
+				        </div>
+				      </div>
+				    </div>
+				  </div>
 				</div>
 			</div>
 		</div>
 	</div>
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.3&appId=444444312396465";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
 	<script type="text/javascript">
 		var data=[
 			{
@@ -260,16 +259,20 @@
 			cur = data[cur].a2.to;
 			update();
 		});
-		$(".end-share").click(function(){
-			window.open("http://tw.yahoo.com","_blank")
+		$(".end-linkmap").click(function(){
+			window.open("http://blueswen.github.io/kkday/","_blank")
 		})
-		$(".end-home").click(function(){
-			window.open("http://www.google.com","_blank")
+		$(".end-air").click(function(){
+			window.open("http://www.tigerair.com/tw/zh/","_blank")
 		})
-		$(".end-link-1").click(function(){
-			console.log("hi");
-			console.log(this);
-			console.log($(this).parent().attr("id"));
+		$('#myModal').on('shown.bs.modal', function () {
+		  $('#myInput').focus()
+		})
+		$(".fb-share-button").click(function(){
+			console.log("hi")
+			setTimeout(function(){ alert("Hello"); }, 3000);
+			setTimeout(function(){ $('#form').css("display",""); }, 3000);
+			setTimeout(function(){ $('#sharebtn').css("display","none"); }, 3000);
 		})
 	</script>
 </body>
