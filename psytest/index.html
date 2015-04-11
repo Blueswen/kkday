@@ -141,7 +141,7 @@
 					<img src="img/sp02.png" class="end-info">
 					<img src="img/sp03.png" class="end-linkmap">
 					<img src="img/sp04.png" class="end-air">
-					<img src="img/share.png" class="end-share">
+					<img src="img/share.png" class="end-share" data-toggle="modal" data-target="#myModal">
 				</div>
 				<div id="e3" class="end" style="display:none">
 					<img src="img/end-back.png" width="100%">
@@ -149,7 +149,7 @@
 					<img src="img/hk02.png" class="end-info">
 					<img src="img/hk03.png" class="end-linkmap">
 					<img src="img/hk04.png" class="end-air">
-					<img src="img/share.png" class="end-share">
+					<img src="img/share.png" class="end-share" data-toggle="modal" data-target="#myModal">
 				</div>
 				<div id="e4" class="end" style="display:none">
 					<img src="img/end-back.png" width="100%">
@@ -157,7 +157,7 @@
 					<img src="img/jp02.png" class="end-info">
 					<img src="img/jp03.png" class="end-linkmap">
 					<img src="img/jp04.png" class="end-air">
-					<img src="img/share.png" class="end-share">
+					<img src="img/share.png" class="end-share" data-toggle="modal" data-target="#myModal">
 				</div>
 				<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 				  <div class="modal-dialog">
@@ -193,8 +193,8 @@
 		var data=[
 			{
 				q:{text:"下課小睡一下，一覺醒來，突然發現自己處在一個陌生的地方，你／妳一睜開眼看到的景色是……"},
-				a1:{text:"城市霓虹",img:"",to:1},
-				a2:{text:"熱帶海灘",img:"",to:4}
+				a1:{text:"城市霓虹",img:"",to:4},
+				a2:{text:"熱帶海灘",img:"",to:1}
 			},
 			{
 				q:{text:"手上握著遊樂園門票，最期待等等看見……？"},
@@ -269,12 +269,6 @@
 		})
 		$('#myModal').on('shown.bs.modal', function () {
 		  $('#myInput').focus()
-		})
-		$(".fb-share-button").click(function(){
-			console.log("hi")
-			setTimeout(function(){ alert("Hello"); }, 3000);
-			setTimeout(function(){ $('#form').css("display",""); }, 3000);
-			setTimeout(function(){ $('#sharebtn').css("display","none"); }, 3000);
 		})
 	</script>
 </body>
