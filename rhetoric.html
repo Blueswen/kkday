@@ -4,6 +4,8 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>KKday 旅行綜合研究所</title>
+	<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/mycss.css">
 	<style type="text/css">
@@ -44,6 +46,74 @@
 
 	.map-des{
 		font-size: 20px;
+	}
+
+	.dst-info{
+		text-align: center;
+	}
+
+	.dst-info h1{
+		font-size: 70px;
+		font-weight: 700;
+		color: #51555a;
+	}
+
+	.dst-info h3{
+		font-size: 20px;
+		font-weight: 700;
+		color: #51555a;
+	}
+
+	.dst-info p{
+		font-size: 14px;
+		color: #51555a;
+		text-align: left;
+		line-height: 200%;
+		padding: 0 30px;
+		margin: 40px 0;
+	}
+
+	.dst-bar{
+		text-align: center;
+		font-size: 20px;
+		margin: 30px 0;
+	}
+
+	.dst-bar span{
+		border: 1px black solid;
+		border-radius: 3px;
+		padding: 10px 15px;
+	}
+
+	.dst-card{
+		border: 1px black solid;
+		border-radius: 5px;
+		padding: 0 20px;
+		margin: 10px;
+		text-align: center;
+	}
+
+	.dst-card h3{
+		font-size: 16px;
+		font-weight: 700;
+		color: #51555a;
+	}
+
+	.dst-card h5{
+		font-size: 14px;
+		color: #51555a;
+	}
+
+	.dst-card img{
+		margin: 10px 0;
+	}
+
+	.dst-card p{
+		font-size: 12px;
+		color: #51555a;
+		text-align: left;
+		line-height: 180%;
+		letter-spacing: 1px;
 	}
 
 	#hk{
@@ -126,36 +196,343 @@
 				</div>
 			</div>
 			<div class="row">
-				<div id="hk" class="col-sm-6 col-xs-12">
+				<div id="hk" class="col-sm-6 col-xs-12" data-toggle="modal" data-target="#hkModal">
 					<img src="img/dst-hk.png">
 					<div class="map-title">
 						港澳
 						<div class="map-des">原來歐洲這麼近，巷弄間的道地人文行旅</div>
 					</div>
-					
 				</div>
-				<div id="jp" class="col-sm-6 col-xs-12">
+				<div class="modal fade dst-modal" id="hkModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				  <div class="modal-dialog">
+				    <div class="modal-content">
+				      <div class="modal-body">
+				      	<div class="row">
+				      		<div class="col-xs-12 dst-info">
+				      			<h1>港澳</h1>
+				        		<h3>原來歐洲這麼近，巷弄間的道地人文行旅</h3>
+				        		<p>有誰不嚮往，一輩子能走訪一次歐洲，深呼吸人文哲思氣息，漫步於歷史悠久的城市裡，巷弄左拐進巴洛克教堂，下個街區遊走文藝復興。或許，這樣的浪漫情懷，只能一輩子幻想吧……，又一次白日夢醒。但，你不曾想像的是，兩張千元大鈔有找的機票，不到兩個小時的飛行航程，就能體驗最道地的歐洲風情——澳門與香港，不只賭場和高樓天際線，船行50分鐘的距離，小英葡就在這裡比鄰而居。耳邊是熟悉的語言，眼前卻沈浸在歐式的建築藝術裡，「這裡到底是亞洲還是歐洲啊？」，穿梭街道間的你，一定會如此讚嘆卻又不禁懷疑。</p>
+				      		</div>
+				      		<div class="row">
+				      			<div class="col-xs-12 dst-bar">
+				      				<span>混搭體驗風格單品</span>
+				      			</div>
+				      		</div>
+				      		<div class="row">
+				      			<div class="col-sm-4 col-xs-12">
+				      				<div class="dst-card">
+				      					<h3>澳葡文化遺產行旅</h3>
+				      					<h5>海洋媽祖信仰與歐洲航海大國的交會之處</h5>
+				      					<img src="img/dst-hk1.jpg" width="100%">
+				      					<p>從超過五百年歷史的媽閣廟開始，過場到海崖上的西望洋山聖堂，走過一條街，就從明朝過渡到葡治。華人海洋信仰的媽祖，與歐洲地理大發現的航海大國——葡萄牙，就在澳門交會。讓當地人告訴你，關於華人媽閣與葡文Macau的典故，還有這裏的每一磚、每一瓦，背後有多少溫情純樸的動人故事。</p>
+				      				</div>
+				      			</div>
+				      			<div class="col-sm-4 col-xs-12">
+				      				<div class="dst-card">
+					      				<h3>香港特手</h3>
+					      				<h5>隱身巷弄間的巧藝工匠</h5>
+					      				<img src="img/dst-hk2.jpg" width="100%">
+					      				<p>望過香港島和九龍半島的城市天際線，見過維多利亞港霓虹輝映的絕美夜景，想要發掘香港高樓大廈外的獨特魅力？就到巷弄間尋覓大隱隱於市的巧手巧手巧巧手吧！親手體驗裁縫、做鞋、線面和鑿字廣告的百年技藝，重新找回那份踏實樸拙的香港人情味。</p>
+					      			</div>
+				      			</div>
+				      			<div class="col-sm-4 col-xs-12">
+				      				<div class="dst-card">
+					      				<h3>文藝的一天</h3>
+					      				<h5>香港故事行</h5>
+					      				<img src="img/dst-hk3.jpg" width="100%">
+					      				<p>時速4.75公里，是認識一座城市最美好的速率。步行香港街頭，探索巷弄間每一道東西融合的痕跡，曾經的英國殖民地，現在的全球金融中心，有著你未曾想像的文藝面貌。從維多利亞風格的英式前警署，到博物館聽完國父孫逸仙十月圍城的革命故事；香港文藝新地標「PMQ元創方」也就近在眼前，荷李活道上湧現融合中西的創意能量；最後，就到蘭桂坊體驗港式夜生活吧！</p>
+					      			</div>
+				      			</div>
+				      		</div>	
+				      		<div class="row">
+				      			<div class="col-xs-12 dst-bar">
+				      				<span>自助必玩基本款</span>
+				      			</div>
+				      		</div>
+				      		<div class="row">
+				      			<div class="col-sm-4 col-xs-12">
+				      				<div class="dst-card">
+					      				<h3>瘋堂斜巷</h3>
+					      				<h5>雜揉東西方的文化創意基地</h5>
+					      				<img src="img/dst-hk4.jpg" width="100%">
+					      				<p>午後陽光穿透雕花窗櫺，隨著婆娑樹影搖曳，恣意散落在靜謐斜巷間，仿佛全世界都停留在這美好時光裡。酒紅、青綠、乳白、銘黃，色彩斑斕的葡式建築，沒有觀光客的嘈雜，只有旅行行家的怡然自得。瘋堂斜巷，過去的麻瘋病院，現在搖身一變成為澳門的文創藝術中心，熱愛藝文的你，正好遠離城市喧囂，沈澱心靈。</p>
+					      			</div>
+				      			</div>
+				      			<div class="col-sm-4 col-xs-12">
+				      				<div class="dst-card">
+					      				<h3>官也街</h3>
+					      				<h5>葡萄牙料理美食街</h5>
+					      				<img src="img/dst-hk5.jpg" width="100%">
+					      				<p>歐洲料理舉世聞名，你肯定在台灣吃過各式義大利、西班牙與法國餐廳，但說到葡萄牙……，除了葡式蛋撻外，卻想不出還有什麼特色佳餚的例子。要體驗獨樹一格的葡萄牙菜色，澳門官也街是的最佳選擇！尤其是葡萄牙航海員流傳下來的家鄉烤乳豬，葡式醬料與酥烤金黃的豬肋排，光在店門外聞見香氣，就足已垂涎三尺！</p>
+					      			</div>
+				      			</div>
+				      			<div class="col-sm-4 col-xs-12">
+				      				<div class="dst-card">
+					      				<h3>幻彩詠香江</h3>
+					      				<h5>維多利亞港的視聽饗宴</h5>
+					      				<img src="img/dst-hk6.jpg" width="100%">
+					      				<p>名列世界之首，維多利亞港邊的水岸天際線，香港島與九龍半島的高樓霓虹夾岸輝映，是香港這座國際城市裡最璀璨的夜色。維多利亞港，從英國殖民時代影響香港歷史與文化至今，不僅有舉世聞名的跨年煙火秀，「幻彩詠香江」更是必看重頭戲！金氏世界紀錄最大的燈光音樂匯演，閃爍繽紛的雷射光影隨著音樂舞動，上演著「東方之珠」的燦爛與輝煌。</p>
+					      			</div>	
+				      			</div>
+				      		</div>
+				      	</div>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+				<div id="jp" class="col-sm-6 col-xs-12" data-toggle="modal" data-target="#jpModal">
 					<img src="img/dst-jp.png">
 					<div class="map-title">
 						東京
 						<div class="map-des">懷舊古城與未來都市交錯共生</div>
 					</div>
 				</div>
+				<div class="modal fade dst-modal" id="jpModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				  <div class="modal-dialog">
+				    <div class="modal-content">
+				      <div class="modal-body">
+				      	<div class="row">
+				      		<div class="col-xs-12 dst-info">
+				      			<h1>東京</h1>
+				        		<h3>懷舊古城與未來都市交錯共生</h3>
+				        		<p>最古老也最未來，最傳統也最現代。這座城市打破二元對立，古今在此相遇，疊合了兩面平行時空——復古江戶與前衛東京。畢業旅行的理想夏日散策，正是在晴空萬里的日子裏，登上東京新地標天空樹頂，遠眺淺草雷門的江戶風情。站在生命中的第一個分歧點，迎風遠颺，呼嘯而過的JR磁浮將駛向未來；轉身遙望，沿著懷舊的鐵道沉澱青春時光。象徵昨日的夕暮與明日的朝陽，在東京這片天空下，完美揉和。</p>
+				      		</div>
+				      		<div class="row">
+				      			<div class="col-xs-12 dst-bar">
+				      				<span>混搭體驗風格單品</span>
+				      			</div>
+				      		</div>
+				      		<div class="row">
+				      			<div class="col-sm-4 col-xs-12">
+				      				<div class="dst-card">
+					      				<h3>夏日午後散策</h3>
+					      				<h5>隅田川遊船</h5>
+					      				<img src="img/dst-jp1.jpg" width="100%">
+					      				<p>夏日午後，讓在地人陪你穿梭於江戶時代與平成27年之間。從東京最古老的佛院淺草寺，漫遊到集中世界精品旗艦店的銀座商圈，享受隅田川遊船的愜意，讓土生土長的東京人傾訴日常生活中，這條河川帶給他們的美好故事。每年七月的最後一個土曜日（星期六），穿著浴衣悠遊隅田川花火大會，也是東京人的共同記憶，就用燦爛煙花為畢業旅行劃下完美驚嘆號吧！</p>
+					      			</div>
+				      			</div>
+				      			<div class="col-sm-4 col-xs-12">
+				      				<div class="dst-card">
+					      				<h3>歌舞伎町一票難求</h3>
+					      				<h5>東京機器人歌舞秀</h5>
+					      				<img src="img/dst-jp2.jpg" width="100%">
+					      				<p>「走出 JR 新宿東出口／那裡就是我的庭園／大遊戲場歌舞伎町」，如果你曾聽過椎名林檎的《歌舞伎町女王》，肯定對新宿不陌生。但除了女王外，全歌舞伎町最夯的「聲色場所」在哪裡？答案就在耗資100億日圓打造的機器人餐廳！隨著電子舞曲和機器人一起擺動身軀，在絢爛螢光下目眩神迷，酣暢淋漓體驗最道地的東京次文化。</p>
+					      			</div>
+				      			</div>
+				      			<div class="col-sm-4 col-xs-12">
+				      				<div class="dst-card">
+					      				<h3>忍者學校</h3>
+					      				<h5>和卡卡西、新兵衛、哈特利當同學？</h5>
+					      				<img src="img/dst-jp3.jpg" width="100%">
+					      				<p>進入忍者學校，請小心，前後左右草木皆兵！不要笑，這不是卡通，忍者世界沒在開玩笑！從現在開始，你將學會手裏劍和冥想九字切，用繩索鏈條技術開發你身上未曾控制的肌肉。全神貫注，心領神會，近身擒拿，飛簷走壁，走出這扇門，你將成為忍者組織的秘密成員！（可別深夜裡跑去暗殺害你延畢的教授啊！）</p>
+					      			</div>
+				      			</div>
+				      		</div>	
+				      		<div class="row">
+				      			<div class="col-xs-12 dst-bar">
+				      				<span>自助必玩基本款</span>
+				      			</div>
+				      		</div>
+				      		<div class="row">
+				      			<div class="col-sm-4 col-xs-12">
+				      				<div class="dst-card">
+					      				<h3>淺草寺</h3>
+					      				<h5>守護隅田川十三個世紀</h5>
+					      				<img src="img/dst-jp4.jpg" width="100%">
+					      				<p>赤橙雷門下，朱紅燈籠高高掛，風神雷神鎮守的是，庇佑東京隅田川人們將近一千四百年的淺草觀音。體驗完仲見世通濃濃的江戶市集，向香火鼎盛的觀音菩薩祈禱，夢想的路上儘管艱辛，但總能平安渡過，化險為夷。許下心願後，望一望夏日晴空，讓深入雲端的天空樹(Tokyo Sky Tree)，指引你未來的方向。</p>
+					      			</div>
+				      			</div>
+				      			<div class="col-sm-4 col-xs-12">
+				      				<div class="dst-card">
+					      				<h3>晴空塔</h3>
+					      				<h5>超越時空的嶄新城市地景</h5>
+					      				<img src="img/dst-jp5.jpg" width="100%">
+					      				<p>連結傳統與現代，矗立在東京都心的天空樹，紮根於日本工匠染藍技藝，宛如白瓷抹上一縷的青藍，朝向宇宙茁壯生長，釋放數位電波與未來對話，對接古今時空，揭幕東京更絢麗的文化之光。</p>
+					      			</div>
+				      			</div>
+				      			<div class="col-sm-4 col-xs-12">
+				      				<div class="dst-card">
+					      				<h3>下北澤</h3>
+					      				<h5>混搭行家的私房更衣室</h5>
+					      				<img src="img/dst-jp6.jpg" width="100%">
+					      				<p>深諳穿搭品味的你，又名「棉鎮」的下北澤正是發揮個人「Mix & Match美學」的尋寶庫。林立街巷的個性店鋪，私藏著富有時代韻味的古著單品。搜刮完「RAGLA MAGLA下北澤1號」全店990圓的二手衣著，或許挑戰混搭學士服，順道Live House「下北澤屋根裏」，享受音樂之城的迷人氣息。</p>
+					      			</div>
+				      			</div>
+				      		</div>
+				      	</div>
+				      </div>
+				    </div>
+				  </div>
+				</div>
 			</div>
 			<div class="row">
-				<div id="tl" class="col-sm-6 col-xs-12">
+				<div id="tl" class="col-sm-6 col-xs-12" data-toggle="modal" data-target="#tlModal">
 					<img src="img/dst-tl.png">
 					<div class="map-title">
 						曼谷
 						<div class="map-des">風貌百變的水上浮城</div>
 					</div>
 				</div>
-				<div id="sp" class="col-sm-6 col-xs-12">
+				<div class="modal fade dst-modal" id="tlModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				  <div class="modal-dialog">
+				    <div class="modal-content">
+				      <div class="modal-body">
+				      	<div class="row">
+				      		<div class="col-xs-12 dst-info">
+				      			<h1>曼谷</h1>
+				        		<h3>風貌百變的水上浮城</h3>
+				        		<p>昭披耶河貫穿都市動脈，大小運河密布全城。曼谷，河流之母擁抱的城市島嶼，曾被賦予東方威尼斯的美名，感染上了如水一般的特質，時而形體百變，時而溫柔包容；穿梭於巷弄之間，青檸與香茅淡雅的氣味，拂去了夏日的煩躁氣息；在這個邁向人生全新階段的路口，置身於輝煌大佛面前，正合適沈澱自我，重新理清思緒，繼續往未知的方向前行。</p>
+				      		</div>
+				      		<div class="row">
+				      			<div class="col-xs-12 dst-bar">
+				      				<span>混搭體驗風格單品</span>
+				      			</div>
+				      		</div>
+				      		<div class="row">
+				      			<div class="col-sm-4 col-xs-12">
+				      				<div class="dst-card">
+					      				<h3>Baipai烹飪學校</h3>
+					      				<h5>大廚教你正宗酸辣泰式料理 </h5>
+					      				<img src="img/dst-tl1.jpg" width="100%">
+					      				<p>嚐過一次泰式料理後，清新鼻息混合舌尖辣味，炎炎夏日，三不五時就嘴饞念著打拋豬、綠咖哩、椰汁雞、青木瓜耶律、冬陰功檸檬蝦湯的佳餚美味。不如這次就在曼谷學起來，傳承大廚正宗泰式手藝，鑽研香茅、青檸、魚露、椰奶與辣椒的香料混搭秘訣，附贈食譜與烹飪秘方，讓你回家後輕鬆重現久久不能忘懷的泰式滋味！</p>
+					      			</div>
+				      			</div>
+				      			<div class="col-sm-4 col-xs-12">
+				      				<div class="dst-card">
+					      				<h3>泰山！是你？</h3>
+					      				<h5>正宗泰國林冠溜索探險！</h5>
+					      				<img src="img/dst-tl2.jpg" width="100%">
+					      				<p>Flight of the Gibbon™和超Q長臂猿一起穿梭雨林囉！TripAdvisor第一推薦的地表最酷極限體驗，在滑翔長達3公里的溜索道上一覽壯盛雨林，擺盪巨木綠意盎然之間。尖叫之餘別忘記跟身邊的長臂猿說聲Hi，讓小猿有機會跟你說聲畢業快樂喲！（還有Go Gibbon™「長臂猿向前衝套餐」等你來挑戰，包含蜘蛛網、泰山跳、飛鞦韆等十六項極限體驗！）</p>
+					      			</div>
+				      			</div>
+				      			<div class="col-sm-4 col-xs-12">
+				      				<div class="dst-card">
+					      				<h3>跳Tone一日遊</h3>
+					      				<h5>丹能莎朵水上市集 × 叢林象遊 × 香豔人妖秀</h5>
+					      				<img src="img/dst-tl3.jpg" width="100%">
+					      				<p>一日玩遍曼谷三種面貌，從丹能莎朵水上市集出發，開始東方威尼斯的悠閒漂流，左手爽嗑榴槤，右手大啖椰子冰，原來這就是泰式慢活啊。場景一轉來到叢林，雙腳一跨躍上象身，巨象渡河大搖大擺，帶著你逃離城市，體驗最原始的樂趣！別忘了，夜幕低垂之時，火辣刺激人妖秀才正要挑逗你的感官神經呀……</p>
+					      			</div>
+				      			</div>
+				      		</div>	
+				      		<div class="row">
+				      			<div class="col-xs-12 dst-bar">
+				      				<span>自助必玩基本款</span>
+				      			</div>
+				      		</div>
+				      		<div class="row">
+				      			<div class="col-sm-4 col-xs-12">
+				      				<div class="dst-card">
+					      				<h3>朱拉隆功大學</h3>
+					      				<h5>泰國最高學府的皇家畢業典禮</h5>
+					      				<img src="img/dst-tl4.jpg" width="100%">
+					      				<p>她是泰國最古老的大學，校徽來自代表五世王的粉紅色。在皇室宮殿般的豪華建築裏，體驗曼谷大學生的日常生活以及皇室加持的畢業典禮。穿著鑲上金邊的泰式學士服suea krui，來張最耀眼的畢業紀念照吧！</p>
+					      			</div>
+				      			</div>
+				      			<div class="col-sm-4 col-xs-12">
+				      				<div class="dst-card">
+					      				<h3>大皇宮</h3>
+					      				<h5>屹立230年的暹羅王國宮殿</h5>
+					      				<img src="img/dst-tl5.jpg" width="100%">
+					      				<p>大皇宮最初採用傳統泰屋的木造建築，於拉瑪五世即位後，融合了義式文藝復興風格興建節基皇殿，兼容並蓄的皇室宮廷與孕育曼谷的昭披耶河對望，向彼此表達滿懷的敬意（在進入大皇宮前，別忘了確認服裝禮儀，或是向服務人員租借沙龍，像個當地人一樣參訪宮殿吧）。</p>
+					      			</div>
+				      			</div>
+				      			<div class="col-sm-4 col-xs-12">
+				      				<div class="dst-card">
+					      				<h3>玉佛寺</h3>
+					      				<h5>守護曼谷王朝的宗教聖地</h5>
+					      				<img src="img/dst-tl6.jpg" width="100%">
+					      				<p>玉佛寺與大皇宮比鄰而坐，皇族在此舉行重大祭典，玉佛由一塊翠綠璧玉的翡翠雕塑而成，每年三季身著不同朝服。閱覽釋迦牟尼與羅摩耶那史詩的壁畫，從猴王哈努曼與半鳥人雕像身上，體會泰式魔幻的神話故事。</p>
+					      			</div>
+				      			</div>
+				      		</div>
+				      	</div>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+				<div id="sp" class="col-sm-6 col-xs-12" data-toggle="modal" data-target="#spModal">
 					<img src="img/dst-sp.png">
 					<div class="map-title">
 						星馬
 						<div class="map-des">赤道雨林與香料航線縱貫的感官歷險</div>
 					</div>
+				</div>
+				<div class="modal fade dst-modal" id="spModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				  <div class="modal-dialog">
+				    <div class="modal-content">
+				      <div class="modal-body">
+				      	<div class="row">
+				      		<div class="col-xs-12 dst-info">
+				      			<h1>星馬</h1>
+				        		<h3>赤道雨林與香料航線縱貫的感官歷險</h3>
+				        		<p>你或許無法想像，現代超市唾手可得的香料，胡椒、肉桂、豆蔻與丁香，竟推動了大航海時代的來臨。為了追求舌尖上與鼻息間的感官刺激，這股動力，陸續促成了哥倫布、達伽馬與麥哲倫的地理大發現(Age of Discovery)——人類首次啟程環遊全世界。人們甘冒風險環求旅行，航海五大洋，壯遊七大洲，追隨著「天堂來的種子」散落的國度，輾轉來到了麻六甲海峽口的東方香料王國——馬來西亞與新加坡。追求極限探險，享受蹦蹦心跳與腎上腺素激增的性格，已深深融入了星馬人的基因。</p>
+				      		</div>
+				      		<div class="row">
+				      			<div class="col-xs-12 dst-bar">
+				      				<span>混搭體驗風格單品</span>
+				      			</div>
+				      		</div>
+				      		<div class="row">
+				      			<div class="col-sm-4 col-xs-12">
+				      				<div class="dst-card">
+					      				<h3>超跑飆速快感</h3>
+					      				<h5>親身駕駛藍寶堅尼奔馳F1賽道！</h5>
+					      				<img src="img/dst-sp1.jpg" width="100%">
+					      				<p>不用坐在觀眾席乾瞪眼，這次換你上場挑戰賽車手，親自駕駛藍寶堅尼、奧迪或瑪莎拉蒂，你，就是全場焦點！享受吧！全場的歡呼、催下油門的低吼、俐落帥氣的打檔，還有新加坡的城市街景從耳邊呼嘯而過！一輩子只有一次的畢業旅行，一定要爽這一回的啦！</p>
+					      			</div>
+				      			</div>
+				      			<div class="col-sm-4 col-xs-12">
+				      				<div class="dst-card">
+					      				<h3>自由跳傘飛行</h3>
+					      				<h5>感受乘風翱翔的iFly體驗！</h5>
+					      				<img src="img/dst-sp2.jpg" width="100%">
+					      				<p>iFly新加坡擁有全球最大的室內跳傘類比裝置，不用擔心天候，不需要飛機，只要踏進iFly就能輕鬆享受飛行樂趣。接受「國際人體飛行協會」培訓的專業教練，將會幫助你自由飛行，甚至嘗試變換隊形的高難度跳傘，滿足你追求驚險刺激的心理，同時實現你「想飛」的渴望！</p>
+					      			</div>
+				      			</div>
+				      			<div class="col-sm-4 col-xs-12">
+				      				<div class="dst-card">
+					      				<h3>火山×叢林×海灘</h3>
+					      				<h5>迪加生還島一日探險三合一</h5>
+					      				<img src="img/dst-sp3.jpeg" width="100%">
+					      				<p>KKday feat. 地表最強沙巴王「洪叔」，當地人指名第一紅牌。想要一次體驗火山、叢林與海灘？到迪加島就對了！浮潛、手釣、泥漿浴、水下拍照、叢林探險還有海鮮BBQ，加碼附送猛男美女隨行套餐，中文導遊、救生員與浮潛教練各一份，受不住受不住，這畢旅未免也太生猛了吧！</p>
+					      			</div>
+				      			</div>
+				      		</div>	
+				      		<div class="row">
+				      			<div class="col-xs-12 dst-bar">
+				      				<span>自助必玩基本款</span>
+				      			</div>
+				      		</div>
+				      		<div class="row">
+				      			<div class="col-sm-4 col-xs-12">
+				      				<div class="dst-card">
+					      				<h3>叻沙麵×海南雞×肉骨茶</h3>
+					      				<h5>勾引嗅覺與味覺的多層次饗宴</h5>
+					      				<img src="img/dst-sp4.jpg" width="100%">
+					      				<p>運用香料的魔術師，星馬肯定是箇中翹楚。結合花椒、八角、薑汁與蒜蓉的海南雞飯；混合茴香、桂皮、丁香與中藥煲製熬煮的肉骨茶湯；由各式香料融合亞參、椰漿、咖哩與海鮮，交織出叻沙(Laksa)的海口鮮美風味，被知名旅遊專欄評為「死前一定品嚐的美食」之一！身為吃貨，一生必定要來一次「舌尖上的星馬」美食巡遊之旅！</p>
+					      			</div>
+				      			</div>
+				      			<div class="col-sm-4 col-xs-12">
+				      				<div class="dst-card">
+					      				<h3>金沙水舞燈光秀</h3>
+					      				<h5>魚尾獅公園眺望水岸城市夜景</h5>
+					      				<img src="img/dst-sp5.jpg" width="100%">
+					      				<p>城市天際線與新加坡河岸映襯五光十色，東南亞規模最盛大的水舞投影與雷射燈光秀就在新加坡的金沙酒店！魚尾獅公園正是遠眺金沙絢爛光影的最佳地點，讓霸氣不失可愛的新加坡迎賓象徵——魚尾獅(Merlion)，歡迎你來到這個「海之鎮」、「獅子城」吧！</p>
+					      			</div>
+				      			</div>
+				      			<div class="col-sm-4 col-xs-12">
+				      				<div class="dst-card">
+					      				<h3>巴魯國家公園</h3>
+					      				<h5>攻下東南亞雨林裏的第一神山</h5>
+					      				<img src="img/dst-sp6.jpg" width="100%">
+					      				<p>生態探險綠色畢旅的第一首選，就在馬來西亞沙巴的京那巴魯國家公園！從海岸邊的海龜島公園，延伸到原始雨林的野生動物保護區，沿途景色壯麗，動植物品種多元，不僅能探訪紅毛猩猩的家，還可以遇見雨林蘭花，以及特色食蟲植物「馬來王豬籠草」。懸空吊橋俯瞰蓊鬱林冠，一路攀上海拔4,095公尺的京那巴魯山後，就前往波令溫泉消除一日疲勞吧！</p>
+					      			</div>
+				      			</div>
+				      		</div>
+				      	</div>
+				      </div>
+				    </div>
+				  </div>
 				</div>
 			</div>
 		</section>
@@ -274,5 +651,8 @@
 			</div>
 		</section>
 	</div>
+	<script type="text/javascript">
+		//$('#hkModal').modal('toggle');
+	</script>
 </body>
 </html>
