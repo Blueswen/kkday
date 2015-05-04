@@ -38,8 +38,12 @@
 		margin: 10%;
 	}
 
+	.dst-modal{
+		border: 1px solid;
+	}
+
 	.dst-map{
-		width: 100%;
+		width: 95%;
 	}
 
 	.dst-info{
@@ -79,7 +83,6 @@
 
 	.dst-card{
 		border: 1px black solid;
-		border-radius: 5px;
 		padding: 0 20px;
 		margin: 10px;
 		text-align: center;
@@ -112,29 +115,37 @@
 		line-height: 180%;
 		letter-spacing: 1px;
 		margin-top: 20px;
-		height: 230px;
+		height: 180px;
 	}
 
 	#hk{
+		padding: 2.5%;
 	}
 
 	#jp{
+		padding: 2.5%;
 	}
 
 	#tl{
+		padding: 2.5%;
 	}
 
 	#sp{
+		padding: 2.5%;
 	}
 
 	.guide-block{
 		background:#efefef;
-		margin:30px 0;
+		margin:70px 0;
 		padding:50px 0;
 	}
 
 	#end{
 		text-align: center;
+	}
+
+	hr{
+		color:#51555A;
 	}
 	</style>
 </head>
@@ -145,23 +156,23 @@
 			<div class="col-sm-push-1 col-sm-10 col-xs-12">
 				<div class="col-sm-push-3 col-sm-6 col-xs-12 text-center">
 					<div class="row">
-						<img height="50px" src="img/rhe.png">
+						<img style="margin-bottom:50px;" height="50px" src="img/rhe.png">
 					</div>
 					<div class="row">
 						<div class="p16">
 							<p>你踏入社會前的最後一堂必修學分</p>
 							<p>誰說畢業是句點？在KKday畫下理想旅行驚嘆號！</p>
 							<p>（無修課人數限制，歡迎重修、暑修、在職進修）</p>
-							<p></p>
+							</br>
 							<p>時光如旅，你總得不斷練習</p>
 							<p>去經歷從一個起點到另一個終點的旅程</p>
 							<p>各站停靠，又再次出發，展開全新生活</p>
-							<p></p>
+							</br>
 							<p>一生只有一次，什麼都值得一試</p>
 							<p>這道習題，讓我們從混搭旅行體驗開始嘗試</p>
 							<p>在世界地圖之上，用雙腳印下專屬打卡標記</p>
 							<p>甦醒全身感官，摹寫男孩女孩們的美好青春</p>
-							<p></p>
+							</br>
 							<p>最獨到Local Tour體驗，映襯最深刻註腳</p>
 							<p>轉化看似結束的句點，成為理想畢旅驚嘆號！</p>	
 						</div>
@@ -182,9 +193,9 @@
 		</section>
 		<hr>
 		<section id="map" class="row">
-			<div class="col-sm-push-1 col-sm-10 col-xs-12">
+			<div class="col-sm-push-2 col-sm-8 col-xs-12">
 				<div class="col-xs-12 text-center">
-					<img height="30px" src="img/dst.png">
+					<img style="margin-bottom:50px;" height="30px" src="img/dst.png">
 					<p class="p18">紀念人生中經歷過的一段重要時光，畢業旅行怎能劃下平平淡淡的句點度過？KKday為旅行玩家搜羅全球精心選物，只要挑選混搭體驗風格單品Mix自助必玩基本款，率性搭配出專屬於你的獨特畢旅，創造驚嘆連連的理想旅行新體驗！</p>
 				</div>
 			</div>
@@ -194,7 +205,7 @@
 				</div>
 				<div class="modal fade dst-modal" id="hkModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 				  <div class="modal-dialog">
-				    <div class="modal-content">
+				    <div class="modal-content" style="border:solid 5px #9BD3C7;">
 				      <div class="modal-body">
 				      	<div class="row">
 				      		<div class="col-xs-12 dst-info">
@@ -252,7 +263,6 @@
 					      				<img src="img/dst-hk4.jpg" width="100%">
 					      				<small>PHOTO by EAJ</small>
 					      				<p>午後陽光穿透雕花窗櫺，隨著婆娑樹影搖曳，恣意散落在靜謐斜巷間，仿佛全世界都停留在這美好時光裡。酒紅、青綠、乳白、銘黃，色彩斑斕的葡式建築，沒有觀光客的嘈雜，只有旅行行家的怡然自得。瘋堂斜巷，過去的麻瘋病院，現在搖身一變成為澳門的文創藝術中心，熱愛藝文的你，正好遠離城市喧囂，沈澱心靈。</p>
-					      				<a href=""><img width="80%" src="img/dst-hkexp.png"></a>
 					      			</div>
 				      			</div>
 				      			<div class="col-sm-4 col-xs-12">
@@ -262,7 +272,6 @@
 					      				<img src="img/dst-hk5.jpg" width="100%">
 					      				<small>PHOTO by Ming-Yen Hsu</small>
 					      				<p>歐洲料理舉世聞名，你肯定在台灣吃過各式義大利、西班牙與法國餐廳，但說到葡萄牙⋯⋯，除了葡式蛋撻外，卻想不出還有什麼特色佳餚的例子。要體驗獨樹一格的葡萄牙菜色，澳門官也街是的最佳選擇！尤其是葡萄牙航海員流傳下來的家鄉烤乳豬，葡式醬料與酥烤金黃的豬肋排，光在店門外聞見香氣，就足已垂涎三尺！</p>
-					      				<a href=""><img width="80%" src="img/dst-hkexp.png"></a>
 					      			</div>
 				      			</div>
 				      			<div class="col-sm-4 col-xs-12">
@@ -272,8 +281,12 @@
 					      				<img src="img/dst-hk6.jpg" width="100%">
 					      				<small>PHOTO by Wellwin Kwok</small>
 					      				<p>名列世界之首，維多利亞港邊的水岸天際線，香港島與九龍半島的高樓霓虹夾岸輝映，是香港這座國際城市裡最璀璨的夜色。維多利亞港，從英國殖民時代影響香港歷史與文化至今，不僅有舉世聞名的跨年煙火秀，「幻彩詠香江」更是必看重頭戲！金氏世界紀錄最大的燈光音樂匯演，閃爍繽紛的雷射光影隨著音樂舞動，上演著「東方之珠」的燦爛與輝煌。</p>
-					      				<a href=""><img width="80%" src="img/dst-hkexp.png"></a>
 					      			</div>	
+				      			</div>
+				      		</div>
+				      		<div class="row">
+				      			<div class="col-sm-12 text-right">
+				      				<a href=""><img height="150px" src="img/rhe-air-hk.png"></a>
 				      			</div>
 				      		</div>
 				      	</div>
@@ -286,7 +299,7 @@
 				</div>
 				<div class="modal fade dst-modal" id="jpModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 				  <div class="modal-dialog">
-				    <div class="modal-content">
+				    <div class="modal-content" style="border:solid 5px #F3E991;">
 				      <div class="modal-body">
 				      	<div class="row">
 				      		<div class="col-xs-12 dst-info">
@@ -344,7 +357,6 @@
 					      				<img src="img/dst-jp4.jpg" width="100%">
 					      				<small>PHOTO by hit thatswitch</small>
 					      				<p>赤橙雷門下，朱紅燈籠高高掛，風神雷神鎮守的是，庇佑東京隅田川人們將近一千四百年的淺草觀音。體驗完仲見世通濃濃的江戶市集，向香火鼎盛的觀音菩薩祈禱，夢想的路上儘管艱辛，但總能平安渡過，化險為夷。許下心願後，望一望夏日晴空，讓深入雲端的天空樹(Tokyo Sky Tree)，指引你未來的方向。</p>
-					      				<a href=""><img width="80%" src="img/dst-jpexp.png"></a>
 					      			</div>
 				      			</div>
 				      			<div class="col-sm-4 col-xs-12">
@@ -354,7 +366,6 @@
 					      				<img src="img/dst-jp5.jpg" width="100%">
 					      				<small>PHOTO by かがみ～</small>
 					      				<p>連結傳統與現代，矗立在東京都心的天空樹，紮根於日本工匠染藍技藝，宛如白瓷抹上一縷的青藍，朝向宇宙茁壯生長，釋放數位電波與未來對話，對接古今時空，揭幕東京更絢麗的文化之光。</p>
-					      				<a href=""><img width="80%" src="img/dst-jpexp.png"></a>
 					      			</div>
 				      			</div>
 				      			<div class="col-sm-4 col-xs-12">
@@ -364,8 +375,12 @@
 					      				<img src="img/dst-jp6.jpg" width="100%">
 					      				<small>PHOTO by CeciliaC</small>
 					      				<p>深諳穿搭品味的你，又名「棉鎮」的下北澤正是發揮個人「Mix & Match美學」的尋寶庫。林立街巷的個性店鋪，私藏著富有時代韻味的古著單品。搜刮完「RAGLA MAGLA下北澤1號」全店990圓的二手衣著，或許挑戰混搭學士服，順道Live House「下北澤屋根裏」，享受音樂之城的迷人氣息。</p>
-					      				<a href=""><img width="80%" src="img/dst-jpexp.png"></a>
 					      			</div>
+				      			</div>
+				      		</div>
+				      		<div class="row">
+				      			<div class="col-sm-12 text-right">
+				      				<a href=""><img height="150px" src="img/rhe-air-jp.png"></a>
 				      			</div>
 				      		</div>
 				      	</div>
@@ -380,7 +395,7 @@
 				</div>
 				<div class="modal fade dst-modal" id="tlModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 				  <div class="modal-dialog">
-				    <div class="modal-content">
+				    <div class="modal-content" style="border:solid 5px #F7CBC1;">
 				      <div class="modal-body">
 				      	<div class="row">
 				      		<div class="col-xs-12 dst-info">
@@ -438,7 +453,6 @@
 					      				<img src="img/dst-tl4.jpg" width="100%">
 					      				<small>PHOTO by Chris Brown</small>
 					      				<p>她是泰國最古老的大學，校徽來自代表五世王的粉紅色。在皇室宮殿般的豪華建築裏，體驗曼谷大學生的日常生活以及皇室加持的畢業典禮。穿著鑲上金邊的泰式學士服suea krui，來張最耀眼的畢業紀念照吧！</p>
-					      				<a href=""><img width="80%" src="img/dst-tlexp.png"></a>
 					      			</div>
 				      			</div>
 				      			<div class="col-sm-4 col-xs-12">
@@ -448,7 +462,6 @@
 					      				<img src="img/dst-tl5.jpg" width="100%">
 					      				<small>PHOTO by DanaRiza Eltra Studio</small>
 					      				<p>大皇宮最初採用傳統泰屋的木造建築，於拉瑪五世即位後，融合了義式文藝復興風格興建節基皇殿，兼容並蓄的皇室宮廷與孕育曼谷的昭披耶河對望，向彼此表達滿懷的敬意（在進入大皇宮前，別忘了確認服裝禮儀，或是向服務人員租借沙龍，像個當地人一樣參訪宮殿吧）。</p>
-					      				<a href=""><img width="80%" src="img/dst-tlexp.png"></a>
 					      			</div>
 				      			</div>
 				      			<div class="col-sm-4 col-xs-12">
@@ -458,8 +471,12 @@
 					      				<img src="img/dst-tl6.jpg" width="100%">
 					      				<small>PHOTO by prajak kaewkanha</small>
 					      				<p>玉佛寺與大皇宮比鄰而坐，皇族在此舉行重大祭典，玉佛由一塊翠綠璧玉的翡翠雕塑而成，每年三季身著不同朝服。閱覽釋迦牟尼與羅摩耶那史詩的壁畫，從猴王哈努曼與半鳥人雕像身上，體會泰式魔幻的神話故事。</p>
-					      				<a href=""><img width="80%" src="img/dst-tlexp.png"></a>
 					      			</div>
+				      			</div>
+				      		</div>
+				      		<div class="row">
+				      			<div class="col-sm-12 text-right">
+				      				<a href=""><img height="150px" src="img/rhe-air-tl.png"></a>
 				      			</div>
 				      		</div>
 				      	</div>
@@ -472,7 +489,7 @@
 				</div>
 				<div class="modal fade dst-modal" id="spModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 				  <div class="modal-dialog">
-				    <div class="modal-content">
+				    <div class="modal-content" style="border:solid 5px #D8D779;">
 				      <div class="modal-body">
 				      	<div class="row">
 				      		<div class="col-xs-12 dst-info">
@@ -530,7 +547,6 @@
 					      				<img src="img/dst-sp4.jpg" width="100%">
 					      				<small>PHOTO by InterContinental Hong Kong</small>
 					      				<p>運用香料的魔術師，星馬肯定是箇中翹楚。結合花椒、八角、薑汁與蒜蓉的海南雞飯；混合茴香、桂皮、丁香與中藥煲製熬煮的肉骨茶湯；由各式香料融合亞參、椰漿、咖哩與海鮮，交織出叻沙(Laksa)的海口鮮美風味，被知名旅遊專欄評為「死前一定品嚐的美食」之一！身為吃貨，一生必定要來一次「舌尖上的星馬」美食巡遊之旅！</p>
-					      				<a href=""><img width="80%" src="img/dst-spexp.png"></a>
 					      			</div>
 				      			</div>
 				      			<div class="col-sm-4 col-xs-12">
@@ -540,7 +556,6 @@
 					      				<img src="img/dst-sp5.jpg" width="100%">
 					      				<small>PHOTO by Franck Vervial</small>
 					      				<p>城市天際線與新加坡河岸映襯五光十色，東南亞規模最盛大的水舞投影與雷射燈光秀就在新加坡的金沙酒店！魚尾獅公園正是遠眺金沙絢爛光影的最佳地點，讓霸氣不失可愛的新加坡迎賓象徵—魚尾獅(Merlion)，歡迎你來到這個「海之鎮」、「獅子城」吧！</p>
-					      				<a href=""><img width="80%" src="img/dst-spexp.png"></a>
 					      			</div>
 				      			</div>
 				      			<div class="col-sm-4 col-xs-12">
@@ -550,8 +565,12 @@
 					      				<img src="img/dst-sp6.jpg" width="100%">
 					      				<small>PHOTO by Lars-Göran Hedström</small>
 					      				<p>生態探險綠色畢旅的第一首選，就在馬來西亞沙巴的京那巴魯國家公園！從海岸邊的海龜島公園，延伸到原始雨林的野生動物保護區，沿途景色壯麗，動植物品種多元，不僅能探訪紅毛猩猩的家，還可以遇見雨林蘭花，以及特色食蟲植物「馬來王豬籠草」。懸空吊橋俯瞰蓊鬱林冠，一路攀上海拔4,095公尺的京那巴魯山後，就前往波令溫泉消除一日疲勞吧！</p>
-					      				<a href=""><img width="80%" src="img/dst-spexp.png"></a>
 					      			</div>
+				      			</div>
+				      		</div>
+				      		<div class="row">
+				      			<div class="col-sm-12 text-right">
+				      				<a href=""><img height="150px" src="img/rhe-air-sp.png"></a>
 				      			</div>
 				      		</div>
 				      	</div>
@@ -561,13 +580,13 @@
 				</div>
 			</div>
 		</section>
-		<hr>
+		<hr width="80%">
 		<section id="guide" class="row">
 			<div class="col-sm-push-1 col-sm-10 col-xs-12">
 				<div class="col-xs-12 text-center">
 					<img height="30px" src="img/rhe-guide.png">
-					<p class="p20">Mix & Match</p>
-					<p class="p20">[V.] 混搭</p>
+					<p class="p20" style="margin-top:50px;">Mix & Match</p>
+					<p class="p20" style="margin-bottom:30px;">[V.] 混搭</p>
 				</div>
 				<div class="col-sm-push-1 col-sm-10 col-xs-12">
 					<p class="p18">沒有規矩，是唯一需要遵守的規矩，混搭，正是隨興所至的個人主義體現，破壞所有框架，將一切刻板印象拋諸腦後。日常生活中，Mix & Mat ch的產物俯拾即是，任意揉和反差美感，巧妙平衡事物衝突性，別樹屬於自我的獨特風格。旅行，也本該如此，傳統與現代融合，東方與西方並陳，讓感官直覺主導，自由發揮實驗精神。從現在開始，打破旅遊公式，混搭你的旅行新體驗。</p>
@@ -669,12 +688,12 @@
 				</div>
 			</div>
 		</section>
-		<hr>
+		<hr width="80%">
 		<section id="dress" class="row">
 			<div class="col-sm-push-1 col-sm-10 col-xs-12">
 				<div class="col-xs-12 text-center">
 					<img height="30px" src="img/rhe-dress.png">
-					<p class="p20">一物多穿混搭單品， 行李減重 7 days 輕便旅行去！</p>
+					<p class="p20" style="margin:30px 0 50px;">一物多穿混搭單品， 行李減重 7 days 輕便旅行去！</p>
 				</div>
 			</div>
 			<div class="col-sm-push-1 col-sm-10 col-xs-12">
@@ -684,7 +703,7 @@
 			</div>
 			<div class="col-sm-push-1 col-sm-10 col-xs-12 text-center"  style="margin:40px 0;">
 				<div class="col-xs-12" style="margin:40px 0;">
-					〔一物多穿旅行混搭秘訣〕
+					<p style="font-size:22px;letter-spacing:1px;color:#51555A">〔一物多穿旅行混搭秘訣〕</p>
 				</div>
 				<div class="col-sm-4 col-xs-12">
 					<img width="90%" style="margin:5%;" src="img/rhe-dress1.png">
@@ -697,28 +716,29 @@
 				</div>
 			</div>
 			<div class="col-sm-push-1 col-sm-10 col-xs-12">
-				<div class="col-sm-push-1 col-sm-4 col-xs-12">
-					<img width="100%" src="img/rhe-dress-girl.png">
+				<div class="col-sm-6 col-xs-12" style="padding:2.5%;">
+					<img width="95%" src="img/rhe-dress-girl.png">
 				</div>
-				<div class="col-sm-push-3 col-sm-4 col-xs-12">
-					<img width="100%" src="img/rhe-dress-boy.png">		
+				<div class="col-sm-6 col-xs-12" style="padding:2.5%;">
+					<img width="95%" src="img/rhe-dress-boy.png">		
 				</div>
 			</div>
 		</section>
 		<hr>
-		<section id="end">
+		<section id="end" style="padding:30px 0;">
 			<p style="font-size:16px;letter-spacing:1px;color:#51555A;">KKday 旅行綜合研究所</p>
 			<p style="font-size:16px;letter-spacing:1px;color:#898D8D;">打破旅行公式 混搭你的旅行新體驗</p>
+			</br>
 			<p style="font-size:16px;letter-spacing:1px;color:#898D8D;">COPYRIGHT © KKDAY 2014</p>
 		</section>
 	</div>
 	<script type="text/javascript">
 		smoothScroll.init();
 		$('#locslide').carousel({
-			interval: false;
+			interval: false
 		})
 		$('#solslide').carousel({
-			interval: false;
+			interval: false
 		})
 		//$('#hkModal').modal('toggle');
 	</script>
