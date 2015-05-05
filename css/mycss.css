@@ -1,9 +1,5 @@
-.menu-logo{
-	height: 30px;
-}
-
 .menu-item{
-	height: 30px;
+	height: 80px;
 }
 
 section{
@@ -64,6 +60,27 @@ section{
 @media (max-width: 768px) {
 	.feature-card{
 		margin-bottom: 25px;
+	}
+
+	section{
+		width: 100%;
+		padding: 50px 0;
+	}
+
+	#locslide .item{
+		height: 270px;
+	}
+	#solslide .item{
+		height: 270px;
+	}
+	#girlslide .modal-dialog{
+		width: 700px;
+	}
+	#boyslide .modal-dialog{
+		width: 700px;
+	}
+	.menu-item{
+		height: 30px;
 	}
 }
 

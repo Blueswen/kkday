@@ -12,6 +12,7 @@
 	<style type="text/css">
 
 	.p20{
+		padding: 0 20px;
 		font-size: 20px;
 		line-height: 150%;
 		letter-spacing: 1px;
@@ -19,6 +20,7 @@
 	}
 
 	.p18{
+		padding: 0 20px;
 		font-size: 18px;
 		line-height: 200%;
 		letter-spacing: 1px;
@@ -27,6 +29,7 @@
 	}
 
 	.p16{
+		padding: 0 20px;
 		font-size: 16px;
 		line-height: 200%;
 		letter-spacing: 1px;
@@ -136,7 +139,7 @@
 
 	.guide-block{
 		background:#efefef;
-		margin:70px 0;
+		margin-top: 0;
 		padding:50px 0;
 	}
 
@@ -160,12 +163,11 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#"><img class="menu-item" src="img/menu-logo.png"></a>
+          <a class="navbar-brand" href="index.html"><img class="menu-item" src="img/menu-logo.png"></a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="rhetoric.html"><img class="menu-item" src="img/menu-rhetoric.png"></a></li>
-            <li><a href=""><img class="menu-item" src="img/menu-lab.png"></a></li>
+            <li><a href="rhetoric.html"><img class="menu-item hidden-xs" src="img/menu-rhe.png"></a><p class="visible-xs-block">旅行修辭學</p></li>
             <li class="hidden-xs"><a href=""><img class="menu-item" src="img/menu-fb.png"></a></li>
             <li class="hidden-xs"><a href=""><img class="menu-item" src="img/menu-kkday.png"></a></li>
           </ul>
@@ -180,7 +182,7 @@
 						<img style="margin-bottom:50px;" height="50px" src="img/rhe.png">
 					</div>
 					<div class="row">
-						<div class="p16">
+						<div class="p16" style="margin-bottom:70px">
 							<p>你踏入社會前的最後一堂必修學分</p>
 							<p>誰說畢業是句點？在KKday畫下理想旅行驚嘆號！</p>
 							<p>（無修課人數限制，歡迎重修、暑修、在職進修）</p>
@@ -200,7 +202,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-sm-push-1 col-sm-10 col-xs-12">
+			<div class="col-sm-push-2 col-sm-8 col-xs-12">
 				<div class="col-sm-4 col-xs-12">
 					<a data-scroll href="#map"><img class="rhe-btn" src="img/rhe-btn1.png"></a>
 				</div>
@@ -227,6 +229,9 @@
 				<div class="modal fade dst-modal" id="hkModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 				  <div class="modal-dialog">
 				    <div class="modal-content" style="border:solid 5px #9BD3C7;">
+				    	<div class="modal-header" style="border:0px;">
+				    		<button type="button" class="close" data-dismiss="modal" aria-label="Close" style="font-size:30px;"><span aria-hidden="true">&times;</span></button>
+				    	</div>
 				      <div class="modal-body">
 				      	<div class="row">
 				      		<div class="col-xs-12 dst-info">
@@ -321,9 +326,13 @@
 				<div class="modal fade dst-modal" id="jpModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 				  <div class="modal-dialog">
 				    <div class="modal-content" style="border:solid 5px #F3E991;">
+				    	<div class="modal-header" style="border:0px;">
+				    		<button type="button" class="close" data-dismiss="modal" aria-label="Close" style="font-size:30px;"><span aria-hidden="true">&times;</span></button>
+				    	</div>
 				      <div class="modal-body">
 				      	<div class="row">
 				      		<div class="col-xs-12 dst-info">
+				      			
 				      			<h1>東京</h1>
 				        		<h3>懷舊古城與未來都市交錯共生</h3>
 				        		<p>最古老也最未來，最傳統也最現代。這座城市打破二元對立，古今在此相遇，疊合了兩面平行時空—復古江戶與前衛東京。畢業旅行的理想夏日散策，正是在晴空萬里的日子裏，登上東京新地標天空樹頂，遠眺淺草雷門的江戶風情。站在生命中的第一個分歧點，迎風遠颺，呼嘯而過的JR磁浮將駛向未來；轉身遙望，沿著懷舊的鐵道沉澱青春時光。象徵昨日的夕暮與明日的朝陽，在東京這片天空下，完美揉和。</p>
@@ -417,6 +426,9 @@
 				<div class="modal fade dst-modal" id="tlModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 				  <div class="modal-dialog">
 				    <div class="modal-content" style="border:solid 5px #F7CBC1;">
+				    	<div class="modal-header" style="border:0px;">
+				    		<button type="button" class="close" data-dismiss="modal" aria-label="Close" style="font-size:30px;"><span aria-hidden="true">&times;</span></button>
+				    	</div>
 				      <div class="modal-body">
 				      	<div class="row">
 				      		<div class="col-xs-12 dst-info">
@@ -511,6 +523,9 @@
 				<div class="modal fade dst-modal" id="spModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 				  <div class="modal-dialog">
 				    <div class="modal-content" style="border:solid 5px #D8D779;">
+				    	<div class="modal-header" style="border:0px;">
+				    		<button type="button" class="close" data-dismiss="modal" aria-label="Close" style="font-size:30px;"><span aria-hidden="true">&times;</span></button>
+				    	</div>
 				      <div class="modal-body">
 				      	<div class="row">
 				      		<div class="col-xs-12 dst-info">
@@ -617,7 +632,7 @@
 				<div class="col-sm-push-1 col-sm-10 col-xs-12 guide-block">
 					<div class="row">
 						<div class="col-sm-6 col-xs-12" style="min-height:130px;">
-							<img width="100%" style="position:absolute;left:-24px;" src="img/rhe-guide-ribbon.png">
+							<img width="80%" style="position:absolute;left:-4.2%;" src="img/rhe-guide-ribbon.png">
 						</div>
 						<div class="col-sm-6 col-xs-12 p16">
 							<p>選擇，是行為自由的具象表徵</p>
