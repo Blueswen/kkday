@@ -160,14 +160,14 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.html"><img class="menu-logo" src="img/menu-logo.png"></a>
+          <a class="navbar-brand" href="#"><img class="menu-item" src="img/menu-logo.png"></a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
             <li><a href="rhetoric.html"><img class="menu-item" src="img/menu-rhetoric.png"></a></li>
             <li><a href=""><img class="menu-item" src="img/menu-lab.png"></a></li>
-            <li><a href=""><img class="menu-item" src="img/menu-fb.png"></a></li>
-            <li><a href=""><img class="menu-item" src="img/menu-kkday.png"></a></li>
+            <li class="hidden-xs"><a href=""><img class="menu-item" src="img/menu-fb.png"></a></li>
+            <li class="hidden-xs"><a href=""><img class="menu-item" src="img/menu-kkday.png"></a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -616,7 +616,7 @@
 			<div class="col-sm-push-1 col-sm-10 col-xs-12">
 				<div class="col-sm-push-1 col-sm-10 col-xs-12 guide-block">
 					<div class="row">
-						<div class="col-sm-6 col-xs-12">
+						<div class="col-sm-6 col-xs-12" style="min-height:130px;">
 							<img width="100%" style="position:absolute;left:-24px;" src="img/rhe-guide-ribbon.png">
 						</div>
 						<div class="col-sm-6 col-xs-12 p16">
@@ -632,81 +632,82 @@
 							<p>最內行的旅行混搭玩家，非你莫屬</p>
 						</div>
 					</div>
-				</div>
-				<div class="row" style="padding: 0 10%;">
-					<div class="col-xs-12" style="font-size:20px;padding:30px 0 10px;">
-						<img height="30px" src="img/rhe-guide-loc.png">
+					<div class="row" style="padding: 0 10%;">
+						<div class="col-xs-12" style="font-size:20px;padding:30px 0 10px;">
+							<img height="30px" src="img/rhe-guide-loc.png">
+						</div>
 					</div>
-				</div>
-				<div class="row" style="padding:0 10%;">
-					<div id="locslide" class="carousel slide" data-ride="carousel" style="border:solid black 1px;">
-					  <!-- Indicators -->
-					  <ol class="carousel-indicators">
-					    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-					    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-					    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-					  </ol>
+					<div class="row" style="padding:0 10%;">
+						<div id="locslide" class="carousel slide" data-ride="carousel" style="border:solid black 1px;">
+						  <!-- Indicators -->
+						  <ol class="carousel-indicators">
+						    <li data-target="#locslide" data-slide-to="0" class="active"></li>
+						    <li data-target="#locslide" data-slide-to="1"></li>
+						    <li data-target="#locslide" data-slide-to="2"></li>
+						  </ol>
 
-					  <!-- Wrapper for slides -->
-					  <div class="carousel-inner" role="listbox">
-					    <div class="item active">
-					    	<img src="img/rhe-guide-loc1.png">
-					      <div class="carousel-caption">
-					        <p>test</p>
-					      </div>
-					    </div>
-					    <div class="item">
-					    	<img src="img/rhe-guide-loc2.png">
-					      <div class="carousel-caption">
-					        <p>test</p>
-					      </div>
-					    </div>
-					    <div class="item">
-					    	<img src="img/rhe-guide-loc3.png">
-					      <div class="carousel-caption">
-					        <p>test</p>
-					      </div>
-					    </div>
-					  </div>
+						  <!-- Wrapper for slides -->
+						  <div class="carousel-inner" role="listbox">
+						    <div class="item active">
+						    	<img src="img/rhe-guide-loc1.png" width="100%">
+						      <div class="carousel-caption">
+						        <p>在基本款的必備景點中，搭配恰到好處的當地特色體驗，給最懂旅行樂趣的你滿滿混搭靈感。<a href="https://www.kkday.com/zh-tw/product/1530" target="_blank" style="color:#ECB645">直昇機感受紐約天際線</a> ，<a href="https://www.kkday.com/zh-tw/product/1127" target="_blank" style="color:#ECB645">化身羅馬戰士拔劍競技</a>，在KKday，還有更多意想不到的玩法，讓朋友們都驚嘆「天啊，你很會！」。</p>
+						      </div>
+						    </div>
+						    <div class="item">
+						    	<img src="img/rhe-guide-loc2.png" width="100%">
+						      <div class="carousel-caption">
+						        <p>混搭行家渾身散發的自由生活態度，來自靈魂深處的Mix & Match精神。學習，是每次旅行後自我成長的最佳紀念。與<a href="https://www.kkday.com/zh-tw/product/1347" target="_blank" style="color:#62B2B5">佛朗明哥女郎在小酒館裡婆娑起舞</a>，和 <a href="https://www.kkday.com/zh-tw/product/1482" target="_blank" style="color:#62B2B5">巴黎五星大廚學習最道地法式料理</a>，親身享受每個文化衝擊的美妙瞬間。</p>
+						      </div>
+						    </div>
+						    <div class="item">
+						    	<img src="img/rhe-guide-loc3.png" width="100%">
+						      <div class="carousel-caption">
+						        <p>深入日常文化背後的思想脈絡，才能輕鬆駕馭各種風格，想探索在地生活風貌，最好的方式就是和當地人一起度過。<a href="https://www.kkday.com/zh-tw/product/1168" target="_blank" style="color:#E26971">單車繞巷弄</a>、<a href="https://www.kkday.com/zh-tw/product/1402" target="_blank" style="color:#E26971">徒步逛市集</a>，聽聽旅遊書不會告訴你的那些，趣味無窮的私房推薦和私藏故事。</p>
+						      </div>
+						    </div>
+						  </div>
+						</div>
 					</div>
-				</div>
-				<div class="row" style="padding: 0 10%;">
-					<div class="col-xs-12" style="font-size:20px;padding:30px 0 10px;">
-						<img height="30px" src="img/rhe-guide-sol.png">
+					<div class="row" style="padding: 0 10%;">
+						<div class="col-xs-12" style="font-size:20px;padding:30px 0 10px;">
+							<img height="30px" src="img/rhe-guide-sol.png">
+						</div>
 					</div>
-				</div>
-				<div class="row" style="padding: 0 10%;">
-					<div id="solslide" class="carousel slide" data-ride="carousel" style="border:solid black 1px;">
-					  <!-- Indicators -->
-					  <ol class="carousel-indicators">
-					    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-					    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-					    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-					  </ol>
+					<div class="row" style="padding: 0 10%;">
+						<div id="solslide" class="carousel slide" data-ride="carousel" style="border:solid black 1px;">
+						  <!-- Indicators -->
+						  <ol class="carousel-indicators">
+						    <li data-target="#solslide" data-slide-to="0" class="active"></li>
+						    <li data-target="#solslide" data-slide-to="1"></li>
+						    <li data-target="#solslide" data-slide-to="2"></li>
+						  </ol>
 
-					  <!-- Wrapper for slides -->
-					  <div class="carousel-inner" role="listbox">
-					    <div class="item active">
-					    	<img src="img/rhe-guide-sol1.png">
-					      <div class="carousel-caption">
-					        <p>test</p>
-					      </div>
-					    </div>
-					    <div class="item">
-					    	<img src="img/rhe-guide-sol2.png">
-					      <div class="carousel-caption">
-					      	<p>test</p>
-					      </div>
-					    </div>
-					    <div class="item">
-					    	<img src="img/rhe-guide-sol3.png">
-					      <div class="carousel-caption">
-					      	<p>test</p>
-					      </div>
-					    </div>
-					  </div>
+						  <!-- Wrapper for slides -->
+						  <div class="carousel-inner" role="listbox">
+						    <div class="item active">
+						    	<img src="img/rhe-guide-sol1.png" width="100%">
+						      <div class="carousel-caption">
+						      	<p>總有些地方火車到不了，總有些時候地鐵已打烊，還有許多非去不可的美好角落等著你尋訪，別讓旅行只侷限在大眾運輸網有限的節點上。披起防風外套，換上輕便後背包，混搭Outdoor風出發！<a href="https://www.kkday.com/zh-tw/product/1480" target="_blank" style="color:#ECB645">搭上KKday接駁車</a>，發掘你未曾想像的壯麗景色。</p>
+						      </div>
+						    </div>
+						    <div class="item">
+						    	<img src="img/rhe-guide-sol2.png" width="100%">
+						      <div class="carousel-caption">
+						      	<p>長串人龍圍堵熱門景點售票亭，限量表演和展覽卻又一票難求，在出發前搶先預購優惠票券吧！省下時間愜意瀏覽<a href="https://www.kkday.com/zh-tw/product/2298" target="_blank" style="color:#62B2B5">吉卜力美術館</a>，好好<a href="https://www.kkday.com/zh-tw/product/2358" target="_blank" style="color:#62B2B5">欣賞首爾明洞的熱情亂打劇場</a>，充實你旅程中的每一刻。</p>
+						      </div>
+						    </div>
+						    <div class="item">
+						    	<img src="img/rhe-guide-sol3.png" width="100%">
+						      <div class="carousel-caption">
+						      	<p>想要深入了解行程內容，或是向local tour供應者即時確認細節，<a href="https://www.kkday.com/zh-tw/kk/traveller" target="_blank" style="color:#E26971">KKday提供訂單管理與詢問行程的溝通管道</a>，並在結束行程體驗的七天後撥款確保你的權益。流暢的旅人體驗品質，正是盡興混搭旅行的最基本要求。</p>
+						      </div>
+						    </div>
+						  </div>
+						</div>
 					</div>
 				</div>
+				
 			</div>
 		</section>
 		<hr width="80%">
@@ -741,17 +742,10 @@
 					<img width="95%" src="img/rhe-dress-girl.png" data-toggle="modal" data-target="#girlModal">
 				</div>
 				<div class="modal fade" id="girlModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-				  <div class="modal-dialog" style="width:auto;">
+				  <div class="modal-dialog" style="width:500px;">
 				    <div class="modal-content">
 				      <div class="modal-body">
-				      	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-				      	  <!-- Indicators -->
-				      	  <ol class="carousel-indicators">
-				      	    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-				      	    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-				      	    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-				      	  </ol>
-
+				      	<div id="girlslide" class="carousel slide" data-ride="carousel">
 				      	  <!-- Wrapper for slides -->
 				      	  <div class="carousel-inner" role="listbox">
 				      	    <div class="item active">
@@ -760,14 +754,29 @@
 				      	    <div class="item">
 				      	      <img src="img/rhe-g2.png" alt=>
 				      	    </div>
+				      	    <div class="item">
+				      	      <img src="img/rhe-g3.png" alt=>
+				      	    </div>
+				      	    <div class="item">
+				      	      <img src="img/rhe-g4.png" alt=>
+				      	    </div>
+				      	    <div class="item">
+				      	      <img src="img/rhe-g5.png" alt=>
+				      	    </div>
+				      	    <div class="item">
+				      	      <img src="img/rhe-g6.png" alt=>
+				      	    </div>
+				      	    <div class="item">
+				      	      <img src="img/rhe-g7.png" alt=>
+				      	    </div>
 				      	  </div>
 
 				      	  <!-- Controls -->
-				      	  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+				      	  <a class="left carousel-control" href="#girlslide" role="button" data-slide="prev">
 				      	    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
 				      	    <span class="sr-only">Previous</span>
 				      	  </a>
-				      	  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+				      	  <a class="right carousel-control" href="#girlslide" role="button" data-slide="next">
 				      	    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
 				      	    <span class="sr-only">Next</span>
 				      	  </a>
@@ -777,9 +786,52 @@
 				  </div>
 				</div>
 				<div class="col-sm-6 col-xs-12" style="padding:2.5%;">
-					<img width="95%" src="img/rhe-dress-boy.png">
+					<img width="95%" src="img/rhe-dress-boy.png" data-toggle="modal" data-target="#boyModal">
 				</div>
-				
+				<div class="modal fade" id="boyModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				  <div class="modal-dialog" style="width:500px;">
+				    <div class="modal-content">
+				      <div class="modal-body">
+				      	<div id="boyslide" class="carousel slide" data-ride="carousel">
+				      	  <!-- Wrapper for slides -->
+				      	  <div class="carousel-inner" role="listbox">
+				      	    <div class="item active">
+				      	      <img src="img/rhe-b1.png" alt="...">
+				      	    </div>
+				      	    <div class="item">
+				      	      <img src="img/rhe-b2.png" alt=>
+				      	    </div>
+				      	    <div class="item">
+				      	      <img src="img/rhe-b3.png" alt=>
+				      	    </div>
+				      	    <div class="item">
+				      	      <img src="img/rhe-b4.png" alt=>
+				      	    </div>
+				      	    <div class="item">
+				      	      <img src="img/rhe-b5.png" alt=>
+				      	    </div>
+				      	    <div class="item">
+				      	      <img src="img/rhe-b6.png" alt=>
+				      	    </div>
+				      	    <div class="item">
+				      	      <img src="img/rhe-b7.png" alt=>
+				      	    </div>
+				      	  </div>
+
+				      	  <!-- Controls -->
+				      	  <a class="left carousel-control" href="#boyslide" role="button" data-slide="prev">
+				      	    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				      	    <span class="sr-only">Previous</span>
+				      	  </a>
+				      	  <a class="right carousel-control" href="#boyslide" role="button" data-slide="next">
+				      	    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				      	    <span class="sr-only">Next</span>
+				      	  </a>
+				      	</div>
+				      </div>
+				    </div>
+				  </div>
+				</div>
 			</div>
 		</section>
 		<hr>
@@ -798,7 +850,12 @@
 		$('#solslide').carousel({
 			interval: false
 		})
-		//$('#hkModal').modal('toggle');
+		$('#boyslide').carousel({
+			interval: false
+		})
+		$('#girlslide').carousel({
+			interval: false
+		})
 	</script>
 </body>
 </html>
