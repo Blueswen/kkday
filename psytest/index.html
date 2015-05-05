@@ -245,6 +245,12 @@
 				a2:{text:"「啪擦－滋－滋滋」，電視怎麼……自己……打開了……",img:"",to:"e4"}
 			}
 		]
+		var end = {
+			"e1":"tl",
+			"e2":"sp",
+			"e3":"hk",
+			"e4":"jp"
+		}
 		var cur = 0;
 		function update() {
 			if(!isNaN(cur)){
@@ -256,6 +262,7 @@
 				console.log(cur);
 			}
 			else{
+				$("#sharebtn").attr("data-href","http://blueswen.github.io/kkday/psytest/"+end[cur])
 				$("#"+cur).css("display","");
 				//$("#que").css("display","none");
 				//$(".ans").css("display","none");
