@@ -1,3 +1,11 @@
+.menu-logo{
+		height: 60px;
+	}
+	
+.menu-item{
+	height: 60px;
+}
+
 section{
 	width: 100%;
 	padding: 100px 0;
