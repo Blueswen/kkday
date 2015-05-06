@@ -24,6 +24,7 @@
 
 	.dst-map{
 		width: 95%;
+		cursor: pointer;
 	}
 
 	.dst-info{
@@ -742,7 +743,7 @@
 			</div>
 			<div class="col-sm-push-1 col-sm-10 col-xs-12">
 				<div class="col-sm-6 col-xs-12" style="padding:2.5%;">
-					<img width="95%" src="img/rhe-dress-girl.png" data-toggle="modal" data-target="#girlModal">
+					<img style="cursor:pointer;" width="95%" src="img/rhe-dress-girl.png" data-toggle="modal" data-target="#girlModal">
 				</div>
 				<div class="modal fade" id="girlModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 				  <div class="modal-dialog">
@@ -792,7 +793,7 @@
 				  </div>
 				</div>
 				<div class="col-sm-6 col-xs-12" style="padding:2.5%;">
-					<img width="95%" src="img/rhe-dress-boy.png" data-toggle="modal" data-target="#boyModal">
+					<img style="cursor:pointer;" width="95%" src="img/rhe-dress-boy.png" data-toggle="modal" data-target="#boyModal">
 				</div>
 				<div class="modal fade" id="boyModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 				  <div class="modal-dialog">
@@ -866,31 +867,31 @@
 			interval: false
 		})
 		function hover(element) {
-			if(element.getAttribute('src')=="img/das-jp.png"){
-				element.setAttribute('src', 'img/das-jp-h.png');
+			if(element.getAttribute('src')=="img/dst-jp.png"){
+				element.setAttribute('src', 'img/dst-jp-h.png');
 			}
-			else if(element.getAttribute('src')=="img/das-sp.png"){
-				element.setAttribute('src', 'img/das-sp-h.png');	
+			else if(element.getAttribute('src')=="img/dst-sp.png"){
+				element.setAttribute('src', 'img/dst-sp-h.png');	
 			}
-			else if(element.getAttribute('src')=="img/das-hk.png"){
-				element.setAttribute('src', 'img/das-hk-h.png');
+			else if(element.getAttribute('src')=="img/dst-hk.png"){
+				element.setAttribute('src', 'img/dst-hk-h.png');
 			}
-			else if(element.getAttribute('src')=="img/das-tl.png"){
-				element.setAttribute('src', 'img/das-tl-h.png');
+			else if(element.getAttribute('src')=="img/dst-tl.png"){
+				element.setAttribute('src', 'img/dst-tl-h.png');
 			}
 		}
 		function unhover(element) {
-	    if(element.getAttribute('src')=="img/das-jp-h.png"){
-				element.setAttribute('src', 'img/das-jp.png');
+	    if(element.getAttribute('src')=="img/dst-jp-h.png"){
+				element.setAttribute('src', 'img/dst-jp.png');
 			}
-			else if(element.getAttribute('src')=="img/das-sp-h.png"){
-				element.setAttribute('src', 'img/das-sp.png');	
+			else if(element.getAttribute('src')=="img/dst-sp-h.png"){
+				element.setAttribute('src', 'img/dst-sp.png');	
 			}
-			else if(element.getAttribute('src')=="img/das-hk-h.png"){
-				element.setAttribute('src', 'img/das-hk.png');
+			else if(element.getAttribute('src')=="img/dst-hk-h.png"){
+				element.setAttribute('src', 'img/dst-hk.png');
 			}
-			else if(element.getAttribute('src')=="img/das-tl-h.png"){
-				element.setAttribute('src', 'img/das-tl.png');
+			else if(element.getAttribute('src')=="img/dst-tl-h.png"){
+				element.setAttribute('src', 'img/dst-tl.png');
 			}
 		}
 	</script>
