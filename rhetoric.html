@@ -212,7 +212,7 @@
 			</div>
 			<div class="col-sm-push-1 col-sm-10 col-xs-12">
 				<div id="hk" class="col-sm-6 col-xs-12" data-toggle="modal" data-target="#hkModal">
-					<img class="dst-map" src="img/dst-hk.png">
+					<img class="dst-map" src="img/dst-hk.png" onmouseover="hover(this)" onmouseout="unhover(this)">
 				</div>
 				<div class="modal fade dst-modal" id="hkModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 				  <div class="modal-dialog">
@@ -309,7 +309,7 @@
 				  </div>
 				</div>
 				<div id="jp" class="col-sm-6 col-xs-12" data-toggle="modal" data-target="#jpModal">
-					<img class="dst-map" src="img/dst-jp.png">
+					<img class="dst-map" src="img/dst-jp.png" onmouseover="hover(this)" onmouseout="unhover(this)">
 				</div>
 				<div class="modal fade dst-modal" id="jpModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 				  <div class="modal-dialog">
@@ -409,7 +409,7 @@
 			</div>
 			<div class="col-sm-push-1 col-sm-10 col-xs-12">
 				<div id="tl" class="col-sm-6 col-xs-12" data-toggle="modal" data-target="#tlModal">
-					<img class="dst-map" src="img/dst-tl.png">
+					<img class="dst-map" src="img/dst-tl.png" onmouseover="hover(this)" onmouseout="unhover(this)">
 				</div>
 				<div class="modal fade dst-modal" id="tlModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 				  <div class="modal-dialog">
@@ -506,7 +506,7 @@
 				  </div>
 				</div>
 				<div id="sp" class="col-sm-6 col-xs-12" data-toggle="modal" data-target="#spModal">
-					<img class="dst-map" src="img/dst-sp.png">
+					<img class="dst-map" src="img/dst-sp.png" onmouseover="hover(this)" onmouseout="unhover(this)">
 				</div>
 				<div class="modal fade dst-modal" id="spModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 				  <div class="modal-dialog">
@@ -865,6 +865,34 @@
 		$('#girlslide').carousel({
 			interval: false
 		})
+		function hover(element) {
+			if(element.getAttribute('src')=="img/das-jp.png"){
+				element.setAttribute('src', 'img/das-jp-h.png');
+			}
+			else if(element.getAttribute('src')=="img/das-sp.png"){
+				element.setAttribute('src', 'img/das-sp-h.png');	
+			}
+			else if(element.getAttribute('src')=="img/das-hk.png"){
+				element.setAttribute('src', 'img/das-hk-h.png');
+			}
+			else if(element.getAttribute('src')=="img/das-tl.png"){
+				element.setAttribute('src', 'img/das-tl-h.png');
+			}
+		}
+		function unhover(element) {
+	    if(element.getAttribute('src')=="img/das-jp-h.png"){
+				element.setAttribute('src', 'img/das-jp.png');
+			}
+			else if(element.getAttribute('src')=="img/das-sp-h.png"){
+				element.setAttribute('src', 'img/das-sp.png');	
+			}
+			else if(element.getAttribute('src')=="img/das-hk-h.png"){
+				element.setAttribute('src', 'img/das-hk.png');
+			}
+			else if(element.getAttribute('src')=="img/das-tl-h.png"){
+				element.setAttribute('src', 'img/das-tl.png');
+			}
+		}
 	</script>
 </body>
 </html>

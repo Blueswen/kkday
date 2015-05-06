@@ -29,6 +29,15 @@
 	  width: 100%;
 	  height: 100%;
 	}
+
+	.feature-text{
+		  color: black;
+  padding: 0 8% 0 5%;
+  position: absolute;
+  top: 72%;
+  font-size: 20px;
+  line-height: 150%;
+	}
 	</style>
 </head>
 <body>
@@ -60,7 +69,7 @@
 			<div class="row">
 				<div class="col-sm-push-2 col-sm-8 col-xs-push-2 col-xs-8">
 					<div class="title">
-						KKday旅行綜合研究所
+						<img class="rhe-title" src="img/index-lab.png">	
 					</div>
 					<div class="content">
 						<p>「理想旅行的樣貌是什麼呢？」</p>
@@ -87,7 +96,7 @@
 			<div class="row">
 				<div class="col-sm-push-2 col-sm-8 col-xs-push-2 col-xs-8">
 					<div class="title">
-						關於KKday
+						<img class="rhe-subtitle" src="img/index-about.png">
 					</div>
 				</div>
 			</div>
@@ -113,41 +122,21 @@
 		<section id="feature">
 			<div class="row">
 				<div class="col-sm-push-2 col-sm-8 col-xs-push-2 col-xs-8 title">
-					四大特色
+					<img class="rhe-subtitle" src="img/index-feature.png">
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-sm-push-0 col-sm-6 col-xs-push-1 col-xs-10 feature-card" style="background:#AEAFB3;">
-					<div class="title">
-						<span style="font-weight:500;">行程</span>獨特性
-					</div>
-					<div class="content">
-						自助旅行時，特色行程無處尋？KKday精選全球最獨到的Local Tour，讓你擁有與眾不同的在地體驗，創造值得一說再說的旅行故事！
-					</div>
+				<div class="col-sm-push-0 col-sm-6 col-xs-push-1 col-xs-10 feature-card">
+					<img width="100%" src="img/index-f1.png" onmouseover="hover(this)" onmouseout="unhover(this)">
 				</div>
-				<div class="col-sm-push-0 col-sm-6 col-xs-push-1 col-xs-10 feature-card" style="background:#C7C8CA;">
-					<div class="title">
-						<span style="font-weight:500;">行程</span>自由性
-					</div>
-					<div class="content">
-						異於你所認知的跟團套裝行程，local tour像是樂高積木，只要選擇你需要的local tour組裝進行程安排中，不但保有自助旅行的自由彈性，同時加值你的在地體驗。
-					</div>
+				<div class="col-sm-push-0 col-sm-6 col-xs-push-1 col-xs-10 feature-card">
+					<img width="100%" src="img/index-f2.png" onmouseover="hover(this)" onmouseout="unhover(this)">
 				</div>
-				<div class="col-sm-push-0 col-sm-6 col-xs-push-1 col-xs-10 feature-card" style="background:#C7C8CA;">
-					<div class="title">
-						<span style="font-weight:500;">行程</span>便利性
-					</div>
-					<div class="content">
-						KKday團隊和你一樣熱愛旅行，知道自助旅程上可能會遇見的困擾。KKday支援多國語言，可直接於平台上與行程提供者溝通聯繫，並提供各式便利的交通接駁與當地導覽服務，幫助自助者輕鬆完成每一次旅程。
-					</div>
+				<div class="col-sm-push-0 col-sm-6 col-xs-push-1 col-xs-10 feature-card">
+					<img width="100%" src="img/index-f3.png" onmouseover="hover(this)" onmouseout="unhover(this)">
 				</div>
-				<div class="col-sm-push-0 col-sm-6 col-xs-push-1 col-xs-10 feature-card" style="background:#AEAFB3;">
-					<div class="title">
-						<span style="font-weight:500;">行程</span>安全性
-					</div>
-					<div class="content">
-						別擔心，KKday永遠站在你這邊，安心交易流程會在確保一切行程順利結束的七天後進行撥款。另外，KKday專業產品經理親自把關每一個行程的品質與合法性，所有評價都來自於真實體驗過的旅客，讓旅人展露笑顏，是我們最大的承諾。
-					</div>
+				<div class="col-sm-push-0 col-sm-6 col-xs-push-1 col-xs-10 feature-card">
+					<img width="100%" src="img/index-f4.png" onmouseover="hover(this)" onmouseout="unhover(this)">
 				</div>
 			</div>
 		</section>
@@ -177,6 +166,34 @@
 				$('.card').toggleClass('flipped');
 			});
 		});
+		function hover(element) {
+			if(element.getAttribute('src')=="img/index-f1.png"){
+				element.setAttribute('src', 'img/index-f1-h.png');
+			}
+			else if(element.getAttribute('src')=="img/index-f2.png"){
+				element.setAttribute('src', 'img/index-f2-h.png');	
+			}
+			else if(element.getAttribute('src')=="img/index-f3.png"){
+				element.setAttribute('src', 'img/index-f3-h.png');
+			}
+			else if(element.getAttribute('src')=="img/index-f4.png"){
+				element.setAttribute('src', 'img/index-f4-h.png');
+			}
+		}
+		function unhover(element) {
+	    if(element.getAttribute('src')=="img/index-f1-h.png"){
+				element.setAttribute('src', 'img/index-f1.png');
+			}
+			else if(element.getAttribute('src')=="img/index-f2-h.png"){
+				element.setAttribute('src', 'img/index-f2.png');	
+			}
+			else if(element.getAttribute('src')=="img/index-f3-h.png"){
+				element.setAttribute('src', 'img/index-f3.png');
+			}
+			else if(element.getAttribute('src')=="img/index-f4-h.png"){
+				element.setAttribute('src', 'img/index-f4.png');
+			}
+		}
 	</script>
 </body>
 </html>
