@@ -2,6 +2,31 @@
 	height: 80px;
 }
 
+.p20{
+	padding: 0 20px;
+	font-size: 20px;
+	line-height: 150%;
+	letter-spacing: 1px;
+	color: #51555A;
+}
+
+.p18{
+	padding: 0 20px;
+	font-size: 18px;
+	line-height: 200%;
+	letter-spacing: 1px;
+	color: #898D8D;
+	text-align: left;
+}
+
+.p16{
+	padding: 0 20px;
+	font-size: 16px;
+	line-height: 200%;
+	letter-spacing: 1px;
+	color: #51555A;	
+}
+
 section{
 	width: 100%;
 	padding: 100px 0;
@@ -57,6 +82,16 @@ section{
 	min-height: 400px;
 }
 
+.rhe-title{
+	height: 50px;
+	margin-bottom: 50px;
+}
+
+.rhe-subtitle{
+	margin-bottom: 50px;
+	height: 30px;
+}
+
 @media (max-width: 768px) {
 	.feature-card{
 		margin-bottom: 25px;
@@ -65,6 +100,16 @@ section{
 	section{
 		width: 100%;
 		padding: 50px 0;
+	}
+
+	.rhe-title{
+		height: 30px;
+		margin-bottom: 30px;
+	}
+
+	.rhe-subtitle{
+		margin-bottom: 20px;
+		height: 20px;
 	}
 
 	#locslide .item{
@@ -81,6 +126,18 @@ section{
 	}
 	.menu-item{
 		height: 30px;
+	}
+	.p20{
+		font-size: 16px;
+	}
+	.p18{
+		font-size: 14px;
+	}
+	.p16{
+		font-size: 12px;
+	}
+	#end{
+		font-size: 12px;
 	}
 }
 

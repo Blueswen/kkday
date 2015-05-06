@@ -11,30 +11,7 @@
 	<link rel="stylesheet" type="text/css" href="css/mycss.css">
 	<style type="text/css">
 
-	.p20{
-		padding: 0 20px;
-		font-size: 20px;
-		line-height: 150%;
-		letter-spacing: 1px;
-		color: #51555A;
-	}
 
-	.p18{
-		padding: 0 20px;
-		font-size: 18px;
-		line-height: 200%;
-		letter-spacing: 1px;
-		color: #898D8D;
-		text-align: left;
-	}
-
-	.p16{
-		padding: 0 20px;
-		font-size: 16px;
-		line-height: 200%;
-		letter-spacing: 1px;
-		color: #51555A;	
-	}
 
 	.rhe-btn{
 		width: 80%;
@@ -139,8 +116,19 @@
 
 	.guide-block{
 		background:#efefef;
-		margin-top: 0;
+		margin-top: 30px;
 		padding:50px 0;
+	}
+
+	#boyModal .modal-dialog{
+		max-width: 500px;
+		width: 80%;
+		margin: auto;
+	}
+	#girlModal .modal-dialog{
+		max-width: 500px;
+		width: 80%;
+		margin: auto;
 	}
 
 	#end{
@@ -167,7 +155,7 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="rhetoric.html"><img class="menu-item hidden-xs" src="img/menu-rhe.png"></a><p class="visible-xs-block">旅行修辭學</p></li>
+            <li><a href="rhetoric.html"><img class="menu-item hidden-xs" src="img/menu-rhe.png"><p class="visible-xs-block" style="margin:0;">旅行修辭學</p></a></li>
             <li class="hidden-xs"><a href=""><img class="menu-item" src="img/menu-fb.png"></a></li>
             <li class="hidden-xs"><a href=""><img class="menu-item" src="img/menu-kkday.png"></a></li>
           </ul>
@@ -179,7 +167,7 @@
 			<div class="col-sm-push-1 col-sm-10 col-xs-12">
 				<div class="col-sm-push-3 col-sm-6 col-xs-12 text-center">
 					<div class="row">
-						<img style="margin-bottom:50px;" height="50px" src="img/rhe.png">
+						<img class="rhe-title" style="margin-bottom:50px;" height="50px" src="img/rhe.png">
 					</div>
 					<div class="row">
 						<div class="p16" style="margin-bottom:70px">
@@ -218,7 +206,7 @@
 		<section id="map" class="row">
 			<div class="col-sm-push-2 col-sm-8 col-xs-12">
 				<div class="col-xs-12 text-center">
-					<img style="margin-bottom:50px;" height="30px" src="img/dst.png">
+					<img class="rhe-subtitle" src="img/dst.png">
 					<p class="p18">紀念人生中經歷過的一段重要時光，畢業旅行怎能劃下平平淡淡的句點度過？KKday為旅行玩家搜羅全球精心選物，只要挑選混搭體驗風格單品Mix自助必玩基本款，率性搭配出專屬於你的獨特畢旅，創造驚嘆連連的理想旅行新體驗！</p>
 				</div>
 			</div>
@@ -252,7 +240,7 @@
 				      					<img src="img/dst-hk1.jpg" width="100%">
 						        		<small>PHOTO by Bernard Tey</small>
 				      					<p>從超過五百年歷史的媽閣廟開始，過場到海崖上的西望洋山聖堂，走過一條街，就從明朝過渡到葡治。華人海洋信仰的媽祖，與歐洲地理大發現的航海大國—葡萄牙，就在澳門交會。讓當地人告訴你，關於華人媽閣與葡文Macau的典故，還有這裏的每一磚、每一瓦，背後有多少溫情純樸的動人故事。</p>
-				      					<a href=""><img width="80%" src="img/dst-hkexp.png"></a>
+				      					<a href="https://www.kkday.com/zh-tw/product/48" target="_blank"><img width="80%" src="img/dst-hkexp.png"></a>
 				      				</div>
 				      			</div>
 				      			<div class="col-sm-4 col-xs-12">
@@ -262,7 +250,7 @@
 					      				<img src="img/dst-hk2.jpg" width="100%">
 					      				<small>PHOTO by KKDay</small>
 					      				<p>望過香港島和九龍半島的城市天際線，見過維多利亞港霓虹輝映的絕美夜景，想要發掘香港高樓大廈外的獨特魅力？就到巷弄間尋覓大隱隱於市的巧手巧手巧巧手吧！親手體驗裁縫、做鞋、線面和鑿字廣告的百年技藝，重新找回那份踏實樸拙的香港人情味。</p>
-					      				<a href=""><img width="80%" src="img/dst-hkexp.png"></a>
+					      				<a href="https://www.kkday.com/zh-tw/product/9" target="_blank"><img width="80%" src="img/dst-hkexp.png"></a>
 					      			</div>
 				      			</div>
 				      			<div class="col-sm-4 col-xs-12">
@@ -272,7 +260,7 @@
 					      				<img src="img/dst-hk3.jpg" width="100%">
 					      				<small>PHOTO by JustShot</small>
 					      				<p>時速4.75公里，是認識一座城市最美好的速率。步行香港街頭，探索巷弄間每一道東西融合的痕跡，曾經的英國殖民地，現在的全球金融中心，有著你未曾想像的文藝面貌。從維多利亞風格的英式前警署，到博物館聽完國父孫逸仙十月圍城的革命故事；香港文藝新地標「PMQ元創方」也就近在眼前，荷李活道上湧現融合中西的創意能量；最後，就到蘭桂坊體驗港式夜生活吧！</p>
-					      				<a href=""><img width="80%" src="img/dst-hkexp.png"></a>
+					      				<a href="https://www.kkday.com/zh-tw/product/15" target="_blank"><img width="80%" src="img/dst-hkexp.png"></a>
 					      			</div>
 				      			</div>
 				      		</div>	
@@ -350,7 +338,7 @@
 					      				<img src="img/dst-jp1.jpg" width="100%">
 					      				<small>PHOTO by Yoshikazu Takada</small>
 					      				<p>夏日午後，讓在地人陪你穿梭於江戶時代與平成27年之間。從東京最古老的佛院淺草寺，漫遊到集中世界精品旗艦店的銀座商圈，享受隅田川遊船的愜意，讓土生土長的東京人傾訴日常生活中，這條河川帶給他們的美好故事。每年七月的最後一個土曜日（星期六），穿著浴衣悠遊隅田川花火大會，也是東京人的共同記憶，就用燦爛煙花為畢業旅行劃下完美驚嘆號吧！</p>
-					      				<a href=""><img width="80%" src="img/dst-jpexp.png"></a>
+					      				<a href="https://www.kkday.com/zh-tw/product/176" target="_blank"><img width="80%" src="img/dst-jpexp.png"></a>
 					      			</div>
 				      			</div>
 				      			<div class="col-sm-4 col-xs-12">
@@ -360,7 +348,7 @@
 					      				<img src="img/dst-jp2.jpg" width="100%">
 					      				<small>PHOTO by Peter Lübeck</small>
 					      				<p>「走出 JR 新宿東出口／那裡就是我的庭園／大遊戲場歌舞伎町」，如果你曾聽過椎名林檎的《歌舞伎町女王》，肯定對新宿不陌生。但除了女王外，全歌舞伎町最夯的「聲色場所」在哪裡？答案就在耗資100億日圓打造的機器人餐廳！隨著電子舞曲和機器人一起擺動身軀，在絢爛螢光下目眩神迷，酣暢淋漓體驗最道地的東京次文化。</p>
-					      				<a href=""><img width="80%" src="img/dst-jpexp.png"></a>
+					      				<a href="https://www.kkday.com/zh-tw/product/1655" target="_blank"><img width="80%" src="img/dst-jpexp.png"></a>
 					      			</div>
 				      			</div>
 				      			<div class="col-sm-4 col-xs-12">
@@ -370,7 +358,7 @@
 					      				<img src="img/dst-jp3.jpg" width="100%">
 					      				<small>PHOTO by Motooki hayasaka</small>
 					      				<p>進入忍者學校，請小心，前後左右草木皆兵！不要笑，這不是卡通，忍者世界沒在開玩笑！從現在開始，你將學會手裏劍和冥想九字切，用繩索鏈條技術開發你身上未曾控制的肌肉。全神貫注，心領神會，近身擒拿，飛簷走壁，走出這扇門，你將成為忍者組織的秘密成員！（可別深夜裡跑去暗殺害你延畢的教授啊！）</p>
-					      				<a href=""><img width="80%" src="img/dst-jpexp.png"></a>
+					      				<a href="https://www.kkday.com/zh-tw/product/181" target="_blank"><img width="80%" src="img/dst-jpexp.png"></a>
 					      			</div>
 				      			</div>
 				      		</div>	
@@ -449,7 +437,7 @@
 					      				<img src="img/dst-tl1.jpg" width="100%">
 					      				<small>PHOTO by Andrea Williams</small>
 					      				<p>嚐過一次泰式料理後，清新鼻息混合舌尖辣味，炎炎夏日，三不五時就嘴饞念著打拋豬、綠咖哩、椰汁雞、青木瓜耶律、冬陰功檸檬蝦湯的佳餚美味。不如這次就在曼谷學起來，傳承大廚正宗泰式手藝，鑽研香茅、青檸、魚露、椰奶與辣椒的香料混搭秘訣，附贈食譜與烹飪秘方，讓你回家後輕鬆重現久久不能忘懷的泰式滋味！</p>
-					      				<a href=""><img width="80%" src="img/dst-tlexp.png"></a>
+					      				<a href="https://www.kkday.com/zh-tw/product/259" target="_blank"><img width="80%" src="img/dst-tlexp.png"></a>
 					      			</div>
 				      			</div>
 				      			<div class="col-sm-4 col-xs-12">
@@ -459,7 +447,7 @@
 					      				<img src="img/dst-tl2.jpg" width="100%">
 					      				<small>PHOTO by ann p</small>
 					      				<p>Flight of the Gibbon™和超Q長臂猿一起穿梭雨林囉！TripAdvisor第一推薦的地表最酷極限體驗，在滑翔長達3公里的溜索道上一覽壯盛雨林，擺盪巨木綠意盎然之間。尖叫之餘別忘記跟身邊的長臂猿說聲Hi，讓小猿有機會跟你說聲畢業快樂喲！（還有Go Gibbon™「長臂猿向前衝套餐」等你來挑戰，包含蜘蛛網、泰山跳、飛鞦韆等十六項極限體驗！）</p>
-					      				<a href=""><img width="80%" src="img/dst-tlexp.png"></a>
+					      				<a href="https://www.kkday.com/zh-tw/product/1883" target="_blank"><img width="80%" src="img/dst-tlexp.png"></a>
 					      			</div>
 				      			</div>
 				      			<div class="col-sm-4 col-xs-12">
@@ -469,7 +457,7 @@
 					      				<img src="img/dst-tl3.jpg" width="100%">
 					      				<small>PHOTO by Xiquinho Silva</small>
 					      				<p>一日玩遍曼谷三種面貌，從丹能莎朵水上市集出發，開始東方威尼斯的悠閒漂流，左手爽嗑榴槤，右手大啖椰子冰，原來這就是泰式慢活啊。場景一轉來到叢林，雙腳一跨躍上象身，巨象渡河大搖大擺，帶著你逃離城市，體驗最原始的樂趣！別忘了，夜幕低垂之時，火辣刺激人妖秀才正要挑逗你的感官神經呀⋯⋯</p>
-					      				<a href=""><img width="80%" src="img/dst-tlexp.png"></a>
+					      				<a href="https://www.kkday.com/zh-tw/product/2151" target="_blank"><img width="80%" src="img/dst-tlexp.png"></a>
 					      			</div>
 				      			</div>
 				      		</div>	
@@ -546,7 +534,7 @@
 					      				<img src="img/dst-sp1.jpg" width="100%">
 					      				<small>PHOTO by wee Sen Goh</small>
 					      				<p>不用坐在觀眾席乾瞪眼，這次換你上場挑戰賽車手，親自駕駛藍寶堅尼、奧迪或瑪莎拉蒂，你，就是全場焦點！享受吧！全場的歡呼、催下油門的低吼、俐落帥氣的打檔，還有新加坡的城市街景從耳邊呼嘯而過！一輩子只有一次的畢業旅行，一定要爽這一回的啦！</p>
-					      				<a href=""><img width="80%" src="img/dst-spexp.png"></a>
+					      				<a href="https://www.kkday.com/zh-tw/product/2085" target="_blank"><img width="80%" src="img/dst-spexp.png"></a>
 					      			</div>
 				      			</div>
 				      			<div class="col-sm-4 col-xs-12">
@@ -556,7 +544,7 @@
 					      				<img src="img/dst-sp2.jpg" width="100%">
 					      				<small>PHOTO by Irvin Chen</small>
 					      				<p>iFly新加坡擁有全球最大的室內跳傘類比裝置，不用擔心天候，不需要飛機，只要踏進iFly就能輕鬆享受飛行樂趣。接受「國際人體飛行協會」培訓的專業教練，將會幫助你自由飛行，甚至嘗試變換隊形的高難度跳傘，滿足你追求驚險刺激的心理，同時實現你「想飛」的渴望！</p>
-					      				<a href=""><img width="80%" src="img/dst-spexp.png"></a>
+					      				<a href="https://www.kkday.com/zh-tw/product/2350" target="_blank"><img width="80%" src="img/dst-spexp.png"></a>
 					      			</div>
 				      			</div>
 				      			<div class="col-sm-4 col-xs-12">
@@ -566,7 +554,7 @@
 					      				<img src="img/dst-sp3.jpeg" width="100%">
 					      				<small>PHOTO by KKDay</small>
 					      				<p>KKday feat. 地表最強沙巴王「洪叔」，當地人指名第一紅牌。想要一次體驗火山、叢林與海灘？到迪加島就對了！浮潛、手釣、泥漿浴、水下拍照、叢林探險還有海鮮BBQ，加碼附送猛男美女隨行套餐，中文導遊、救生員與浮潛教練各一份，受不住受不住，這畢旅未免也太生猛了吧！</p>
-					      				<a href=""><img width="80%" src="img/dst-spexp.png"></a>
+					      				<a href="https://www.kkday.com/zh-tw/product/2043" target="_blank"><img width="80%" src="img/dst-spexp.png"></a>
 					      			</div>
 				      			</div>
 				      		</div>	
@@ -618,13 +606,13 @@
 		</section>
 		<hr width="80%">
 		<section id="guide" class="row">
-			<div class="col-sm-push-1 col-sm-10 col-xs-12">
+			<div class="col-sm-push-2 col-sm-8 col-xs-12">
 				<div class="col-xs-12 text-center">
-					<img height="30px" src="img/rhe-guide.png">
+					<img class="rhe-subtitle" src="img/rhe-guide.png">
 					<p class="p20" style="margin-top:50px;">Mix & Match</p>
 					<p class="p20" style="margin-bottom:30px;">[V.] 混搭</p>
 				</div>
-				<div class="col-sm-push-1 col-sm-10 col-xs-12">
+				<div class="col-xs-12">
 					<p class="p18">沒有規矩，是唯一需要遵守的規矩，混搭，正是隨興所至的個人主義體現，破壞所有框架，將一切刻板印象拋諸腦後。日常生活中，Mix & Mat ch的產物俯拾即是，任意揉和反差美感，巧妙平衡事物衝突性，別樹屬於自我的獨特風格。旅行，也本該如此，傳統與現代融合，東方與西方並陳，讓感官直覺主導，自由發揮實驗精神。從現在開始，打破旅遊公式，混搭你的旅行新體驗。</p>
 				</div>
 			</div>
@@ -649,7 +637,7 @@
 					</div>
 					<div class="row" style="padding: 0 10%;">
 						<div class="col-xs-12" style="font-size:20px;padding:30px 0 10px;">
-							<img height="30px" src="img/rhe-guide-loc.png">
+							<img class="rhe-subtitle" height="30px" src="img/rhe-guide-loc.png">
 						</div>
 					</div>
 					<div class="row" style="padding:0 10%;">
@@ -686,7 +674,7 @@
 					</div>
 					<div class="row" style="padding: 0 10%;">
 						<div class="col-xs-12" style="font-size:20px;padding:30px 0 10px;">
-							<img height="30px" src="img/rhe-guide-sol.png">
+							<img class="rhe-subtitle" src="img/rhe-guide-sol.png">
 						</div>
 					</div>
 					<div class="row" style="padding: 0 10%;">
@@ -727,14 +715,14 @@
 		</section>
 		<hr width="80%">
 		<section id="dress" class="row">
-			<div class="col-sm-push-1 col-sm-10 col-xs-12">
+			<div class="col-sm-push-2 col-sm-8 col-xs-12">
 				<div class="col-xs-12 text-center">
-					<img height="30px" src="img/rhe-dress.png">
+					<img class="rhe-subtitle" src="img/rhe-dress.png">
 					<p class="p20" style="margin:30px 0 50px;">一物多穿混搭單品， 行李減重 7 days 輕便旅行去！</p>
 				</div>
 			</div>
-			<div class="col-sm-push-1 col-sm-10 col-xs-12">
-				<div class="col-xs-push-2 col-xs-8 p18">
+			<div class="col-sm-push-2 col-sm-8 col-xs-12">
+				<div class="col-xs-12 p18">
 					<p>輕便舒適的穿搭，是每日旅行好心情的開始。但行李箱空間有限，又得要面對各種旅行場合，真是恨不得拖一架衣櫃上飛機。KKday打造旅行穿搭週計畫，告訴你一物多穿的搭配秘訣，用最少量的單品輕鬆混搭，聰明應付所有旅行情境！</p>
 				</div>
 			</div>
@@ -757,8 +745,11 @@
 					<img width="95%" src="img/rhe-dress-girl.png" data-toggle="modal" data-target="#girlModal">
 				</div>
 				<div class="modal fade" id="girlModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-				  <div class="modal-dialog" style="width:500px;">
+				  <div class="modal-dialog">
 				    <div class="modal-content">
+				    	<div class="modal-header" style="border:0px;">
+				    		<button type="button" class="close" data-dismiss="modal" aria-label="Close" style="font-size:30px;"><span aria-hidden="true">&times;</span></button>
+				    	</div>
 				      <div class="modal-body">
 				      	<div id="girlslide" class="carousel slide" data-ride="carousel">
 				      	  <!-- Wrapper for slides -->
@@ -804,8 +795,11 @@
 					<img width="95%" src="img/rhe-dress-boy.png" data-toggle="modal" data-target="#boyModal">
 				</div>
 				<div class="modal fade" id="boyModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-				  <div class="modal-dialog" style="width:500px;">
+				  <div class="modal-dialog">
 				    <div class="modal-content">
+				    	<div class="modal-header" style="border:0px;">
+				    		<button type="button" class="close" data-dismiss="modal" aria-label="Close" style="font-size:30px;"><span aria-hidden="true">&times;</span></button>
+				    	</div>
 				      <div class="modal-body">
 				      	<div id="boyslide" class="carousel slide" data-ride="carousel">
 				      	  <!-- Wrapper for slides -->
