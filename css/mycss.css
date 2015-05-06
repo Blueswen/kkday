@@ -1,5 +1,5 @@
 .menu-item{
-	height: 80px;
+	height: 70px;
 }
 
 .p20{
@@ -7,7 +7,7 @@
 	font-size: 20px;
 	line-height: 150%;
 	letter-spacing: 1px;
-	color: #51555A;
+	color: #51555A; 
 }
 
 .p18{
@@ -45,8 +45,7 @@ section{
 }
 
 #home{
-	height: 100vh;
-	background: #26BEC9;
+	padding-bottom: 10px;
 	text-align: center;
 }
 
@@ -68,7 +67,7 @@ section{
 }
 
 #info{
-	background: #DAE4E9;
+	background: #F7F8F8;
 }
 
 #feature{
@@ -77,9 +76,7 @@ section{
 }
 
 .feature-card{
-	padding: 2.5%;
 	color: white;
-	min-height: 400px;
 }
 
 .rhe-title{
@@ -91,6 +88,11 @@ section{
 	margin-bottom: 50px;
 	height: 30px;
 }
+
+.rhe-btn{
+		width: 80%;
+		margin: 10%;
+	}
 
 @media (max-width: 768px) {
 	.feature-card{
@@ -139,6 +141,10 @@ section{
 	#end{
 		font-size: 12px;
 	}
+	.rhe-btn{
+		width: 60%;
+		margin: 5% 20%;
+	}
 }
 
 #go{
@@ -146,6 +152,10 @@ section{
 	height: 200px;
 	background: white;
 	padding-top: 80px
+}
+
+#go a:hover{
+	text-decoration: none;
 }
 
 #gobutton{

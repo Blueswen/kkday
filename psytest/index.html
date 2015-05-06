@@ -168,15 +168,22 @@
 				<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 				  <div class="modal-dialog">
 				    <div class="modal-content">
+				    	<div class="modal-header" style="border:0px;">
+				    		<button type="button" class="close" data-dismiss="modal" aria-label="Close" style="font-size:30px;"><span aria-hidden="true">&times;</span></button>
+				    	</div>
 				      <div class="modal-body text-center">
 				        <p style="font-size:16px;color:#26BEC9;">「KKday提醒您：記得設定成公開分享喔！」</p>
-				        <div class="fb-share-button" id="sharebtn" data-href="http://blueswen.github.io/kkday/psytest/" data-layout="button"></div>
-				        <div class="fb-share-button" id="sharebtn1" data-href="http://blueswen.github.io/kkday/psytest/jp.html" data-layout="button"></div>
-				        <div class="fb-share-button" id="sharebtn2" data-href="http://blueswen.github.io/kkday/psytest/sp.html" data-layout="button"></div>
-				        <div class="fb-share-button" id="sharebtn3" data-href="http://blueswen.github.io/kkday/psytest/tl.html" data-layout="button"></div>
-				        <div class="fb-share-button" id="sharebtn4" data-href="http://blueswen.github.io/kkday/psytest/hk.html" data-layout="button"></div>
+				        <div class="fb-share-button" style="display:none;" id="sharebtn1" data-href="http://blueswen.github.io/kkday/psytest/tl.html" data-layout="button"></div>
+				        <div class="fb-share-button" style="display:none;" id="sharebtn2" data-href="http://blueswen.github.io/kkday/psytest/sp.html" data-layout="button"></div>
+				        <div class="fb-share-button" style="display:none;" id="sharebtn3" data-href="http://blueswen.github.io/kkday/psytest/hk.html" data-layout="button"></div>
+				        <div class="fb-share-button" style="display:none;" id="sharebtn4" data-href="http://blueswen.github.io/kkday/psytest/jp.html" data-layout="button"></div>
 				        <div id="form" style="text-align:left;">
-				        	<form action="https://docs.google.com/forms/d/1sGTwxHYhp4jm8hOwHn6jdIlk0hQ_1nGqLMIPYXtqw4w/formResponse" method="POST" id="ss-form" target="_self" onsubmit="">
+				        	<script type="text/javascript">var submitted=false;</script>
+				        	<iframe name="hidden_iframe" id="hidden_iframe"
+				        	style="display:none;" onload="if(submitted)
+				        	{alert('提交完成');}"></iframe>
+				        	<form action="https://docs.google.com/forms/d/1sGTwxHYhp4jm8hOwHn6jdIlk0hQ_1nGqLMIPYXtqw4w/formResponse" method="post"
+				        	target="hidden_iframe" onsubmit="submitted=true;">
 				        		<div class="form-group">
 				        			<label>姓名</label>
 				        			<input type="text" name="entry.812490959" value="" class="form-control ss-q-short required" id="entry_812490959" dir="auto" aria-label="姓名  " aria-required="true" required="" title="">	
@@ -266,7 +273,18 @@
 				console.log(cur);
 			}
 			else{
-				$("#sharebtn").attr("data-href","http://blueswen.github.io/kkday/psytest/"+end[cur]+".html")
+				if(cur=="e1"){
+					$('#sharebtn1').css("display","");
+				}
+				else if(cur=="e2"){
+					$('#sharebtn2').css("display","");
+				}
+				else if(cur=="e3"){
+					$('#sharebtn3').css("display","");
+				}
+				else if(cur=="e4"){
+					$('#sharebtn4').css("display","");
+				}
 				$("#"+cur).css("display","");
 				//$("#que").css("display","none");
 				//$(".ans").css("display","none");
@@ -291,7 +309,7 @@
 			update();
 		});
 		$(".end-linkmap").click(function(){
-			window.open("http://blueswen.github.io/kkday/","_blank")
+			window.open("../rhetoric.html","_blank")
 		})
 		$(".end-air").click(function(){
 			window.open("http://www.tigerair.com/tw/zh/","_blank")
