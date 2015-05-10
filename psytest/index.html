@@ -173,6 +173,7 @@
 				    	</div>
 				      <div class="modal-body text-center">
 				        <p style="font-size:16px;color:#26BEC9;">「KKday提醒您：記得設定成公開分享喔！」</p>
+				        <button onclick="PostToFeed()">test</button>
 				        <div class="fb-share-button" style="display:none;" id="sharebtn1" data-href="http://blueswen.github.io/kkday/psytest/tl.html" data-layout="button"></div>
 				        <div class="fb-share-button" style="display:none;" id="sharebtn2" data-href="http://blueswen.github.io/kkday/psytest/sp.html" data-layout="button"></div>
 				        <div class="fb-share-button" style="display:none;" id="sharebtn3" data-href="http://blueswen.github.io/kkday/psytest/hk.html" data-layout="button"></div>
@@ -321,6 +322,23 @@
 		$('#myModal').on('shown.bs.modal', function () {
 		  $('#myInput').focus()
 		})
+		function PostToFeed() {
+        FB.ui({
+            display: 'iframe',
+            method: 'feed',
+            name: '如果時光倒流，你會是哪個古人？',
+            caption:'回到過去，和古人一起喝「生活飲料」吧！',
+            description: '神準心理測驗，原來你是....',
+            link: 'http://goo.gl/l6IypL',
+            picture: pictureURL
+        }, function(response) {
+            if (response && response.post_id) {
+                alert('已經與朋友分享囉！記得按讚才能參加抽獎哦！');
+            } else {
+                alert('分享已取消，記得分享才能參加抽獎哦！');
+            }
+        });
+    }
 	</script>
 </body>
 </html>
