@@ -267,6 +267,7 @@
 			"e4":"jp"
 		}
 		var cur = 0;
+		var pictureURL;
 		function update() {
 			if(!isNaN(cur)){
 				$("#que").html(data[cur].q.text);
@@ -279,16 +280,20 @@
 			else{
 				$('#entry_1924557984').attr("value",end[cur]);
 				if(cur=="e1"){
-					$('#sharebtn1').css("display","");
+					pictureURL = "img/share-tl.png";
+					//$('#sharebtn1').css("display","");
 				}
 				else if(cur=="e2"){
-					$('#sharebtn2').css("display","");
+					pictureURL = "img/share-sp.png";
+					//$('#sharebtn2').css("display","");
 				}
 				else if(cur=="e3"){
-					$('#sharebtn3').css("display","");
+					pictureURL = "img/share-hk.png";
+					//$('#sharebtn3').css("display","");
 				}
 				else if(cur=="e4"){
-					$('#sharebtn4').css("display","");
+					pictureURL = "img/share-jp.png";
+					//$('#sharebtn4').css("display","");
 				}
 				$("#"+cur).css("display","");
 				//$("#que").css("display","none");
@@ -322,6 +327,23 @@
 		$('#myModal').on('shown.bs.modal', function () {
 		  $('#myInput').focus()
 		})
+		function PostToFeed() {
+      FB.ui({
+        display: 'iframe',
+        method: 'feed',
+        name: '【KKday旅行診斷室】原來我的理想畢旅在這裡？！',
+        caption:'KKday送你「旅行基金」與「虎航來回機票」，在一段人生歷程畢業之際，測測哪裡是你的理想畢旅目的地，即刻出發去旅行！',
+        description: 'KKday旅行綜合研究所 — 打破公式 混搭旅行新體驗',
+        link: 'http://blueswen.github.io/kkday/psytest',
+        picture: pictureURL
+	    }, function(response) {
+        if (response && response.post_id) {
+            alert('已經與朋友分享囉！記得按讚才能參加抽獎哦！');
+        } else {
+            alert('分享已取消，記得分享才能參加抽獎哦！');
+   	  	}
+      });
+    }
 	</script>
 </body>
 </html>

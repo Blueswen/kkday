@@ -3,19 +3,13 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta property="og:title" content="【KKday旅行診斷室】原來我的理想畢旅在這裡？！" />  
-	<meta property="og:type" content="website" />  
-	<meta property="og:url" content="http://blueswen.github.io/kkday/psytest/" />  
-	<meta property="og:image" content="img/share-jp.png" />  
-	<meta property="og:site_name" content="KKday旅行綜合研究所 — 打破公式 混搭旅行新體驗"/>  
-	<meta property="og:description" content="KKday送你「旅行基金」與「虎航來回機票」，在一段人生歷程畢業之際，測測哪裡是你的理想畢旅目的地，即刻出發去旅行！"/>
 	<title>心理測驗</title>
 	<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
 	<script src="../js/bootstrap.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
 	<style type="text/css">
 		body{
-			font-size: 18px;
+			font-size: 1em;
 			background: #f3e891;
 			color: #505559;
 		}
@@ -25,7 +19,7 @@
 		.block{
 			border-radius: 3px;
 			border: solid black 1px;
-			padding: 10px;
+			padding: 5px;
 			margin: 10px;
 		}
 		#start{
@@ -38,22 +32,21 @@
 			position: absolute;
 		  top: 30%;
 		  left: 0;
-		  width: 60%;
-		  margin: 0 25%;
-		  text-align: left;
+		  width: 80%;
+		  margin: 0 10%;
 		}
 		#ansblock{
 			position: absolute;
 		  top: 50%;
 		  left: 0;
-		  width: 60%;
-		  margin: 0 25%;
+		  width: 80%;
+		  margin: 0 10%;
 		}
 		#startbtn{
 			width: 38%;
 		  position: absolute;
 		  top: 35%;
-		  left: 58%;
+		  left: 47%;
 		  cursor: pointer;
 		}
 		.pic{
@@ -62,65 +55,69 @@
 		.ans{
 			cursor: pointer;
 		}
-		.ans:hover{
-			background: #2ab3bd;
-		}
 		.end-map{
 			position: absolute;
-		  top: 30%;
-		  left: 10%;
-		  width: 40%;
+		  top: 21%;
+		  left: 6%;
+		  height: 25%;
 		}
 		.end-info{
 			position: absolute;
-		  top: 30%;
-		  left: 50%;
-		  width: 40%;
+		  top: 47%;
+		  left: 6%;
+		  height: 15.5%;
 		}
 		.end-linkmap{
 			cursor: pointer;
 			position: absolute;
-		  width: 74%;
-		  top: 58%;
-		  left: 13%;
+		  height: 11%;
+		  top: 70%;
+		  left: 10%;
 		}
 		.end-air{
 			cursor: pointer;
 		  position: absolute;
-		  top: 80%;
-		  width: 15%;
-		  left: 72%;
+		  top: 86%;
+		  width: 30%;
+		  left: 60%;
 		}
 		.end-share{
-			cursor: pointer;
 			position: absolute;
-			top: 48%;
-			left: 52%;
-			height: 4%;
+			top: 65%;
+			left: 10%;
+			color: white;
+			background: #26BEC9;
+			border: black solid 1px;
+			font-size: 16px;
 		}
-
+		.end-kkday{
+			position: absolute;
+			top: 83%;
+			left:10%;
+			color: white;
+			background: #26BEC9;
+			border: black solid 1px;
+			font-size: 12px;
+		}
+		div{
+			padding: 0px;
+		}
 	</style>
-	<script type="text/javascript">
-		if (screen.width <= 800) {
-	    window.location = "mobile.html";
-	  }
-	</script>
 </head>
 <body>
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-xs-12 col-sm-push-1 col-sm-10 col-md-push-1 col-md-10 main">
-				<div class="fb-like" data-href="https://www.facebook.com/KKdayTW/" data-width="300" data-layout="standard" data-action="like" data-show-faces="false" data-share="true" style="position:absolute;right:0;top:5%;"></div>
 				<div id="start">
-					<img src="img/start.png" width="100%">
-					<img id="startbtn" src="img/start-btn.png">
+					<img src="img-m/start.png" width="100%">
+					<img id="startbtn" src="img-m/start-btn.png">
 				</div>
-				<div id="question" style="display:none" class="text-center">
-					<img src="img/back.png" width="60%">
-					<div id="que" style="width:50%">
+				<div id="question" style="display:none">
+					<img src="img-m/back.png" width="100%">
+					<div id="que" class="block" style="border:0px;">
 						
 					</div>
-					<div class="row" id="ansblock" style="width:50%">
+					<div class="row" id="ansblock">
 						<div class="col-xs-6 col-sm-6">
 							<div id="ans1" class="ans block">
 								
@@ -134,55 +131,53 @@
 					</div>
 				</div>
 				<div id="e1" class="end" style="display:none">
-					<img src="img/end-back.png" width="100%">
-					<img src="img/tl01.png" class="end-map">
-					<img src="img/tl02.png" class="end-info">
-					<img src="img/tl03.png" class="end-linkmap">
-					<img src="img/tl04.png" class="end-air">
-					<img src="img/share.png" class="end-share" data-toggle="modal" data-target="#myModal">
+					<img src="img-m/end-back.png" width="100%">
+					<img src="img-m/tl01.png" class="end-map">
+					<img src="img-m/tl02.png" class="end-info">
+					<button class="end-share" data-toggle="modal" data-target="#myModal">分享至FB，填寫資料抽獎去 > </button>
+					<img src="img-m/tl03.png" class="end-linkmap">
+					<a href="../rhetoric.html"><button class="end-kkday">進入KKday旅行綜合研究所 了解更多 > </button></a>
+					<img src="img-m/tl04.png" class="end-air">
 				</div>
 				<div id="e2" class="end" style="display:none">
-					<img src="img/end-back.png" width="100%">
-					<img src="img/sp01.png" class="end-map">
-					<img src="img/sp02.png" class="end-info">
-					<img src="img/sp03.png" class="end-linkmap">
-					<img src="img/sp04.png" class="end-air">
-					<img src="img/share.png" class="end-share" data-toggle="modal" data-target="#myModal">
+					<img src="img-m/end-back.png" width="100%">
+					<img src="img-m/sp01.png" class="end-map">
+					<img src="img-m/sp02.png" class="end-info">
+					<button class="end-share" data-toggle="modal" data-target="#myModal">分享至FB，填寫資料抽獎去 > </button>
+					<img src="img-m/sp03.png" class="end-linkmap">
+					<a href="../rhetoric.html"><button class="end-kkday">進入KKday旅行綜合研究所 了解更多 > </button></a>
+					<img src="img-m/sp04.png" class="end-air">
 				</div>
 				<div id="e3" class="end" style="display:none">
-					<img src="img/end-back.png" width="100%">
-					<img src="img/hk01.png" class="end-map">
-					<img src="img/hk02.png" class="end-info">
-					<img src="img/hk03.png" class="end-linkmap">
-					<img src="img/hk04.png" class="end-air">
-					<img src="img/share.png" class="end-share" data-toggle="modal" data-target="#myModal">
+					<img src="img-m/end-back.png" width="100%">
+					<img src="img-m/hk01.png" class="end-map">
+					<img src="img-m/hk02.png" class="end-info">
+					<button class="end-share" data-toggle="modal" data-target="#myModal">分享至FB，填寫資料抽獎去 > </button>
+					<img src="img-m/hk03.png" class="end-linkmap">
+					<a href="../rhetoric.html"><button class="end-kkday">進入KKday旅行綜合研究所 了解更多 > </button></a>
+					<img src="img-m/hk04.png" class="end-air">
 				</div>
 				<div id="e4" class="end" style="display:none">
-					<img src="img/end-back.png" width="100%">
-					<img src="img/jp01.png" class="end-map">
-					<img src="img/jp02.png" class="end-info">
-					<img src="img/jp03.png" class="end-linkmap">
-					<img src="img/jp04.png" class="end-air">
-					<img src="img/share.png" class="end-share" data-toggle="modal" data-target="#myModal">
+					<img src="img-m/end-back.png" width="100%">
+					<img src="img-m/jp01.png" class="end-map">
+					<img src="img-m/jp02.png" class="end-info">
+					<button class="end-share" data-toggle="modal" data-target="#myModal">分享至FB，填寫資料抽獎去 > </button>
+					<img src="img-m/jp03.png" class="end-linkmap">
+					<a href="../rhetoric.html"><button class="end-kkday">進入KKday旅行綜合研究所 了解更多 > </button></a>
+					<img src="img-m/jp04.png" class="end-air">
 				</div>
 				<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 				  <div class="modal-dialog">
 				    <div class="modal-content">
 				    	<div class="modal-header" style="border:0px;">
-				    		<button id="modalclose" type="button" class="close" data-dismiss="modal" aria-label="Close" style="font-size:30px;"><span aria-hidden="true">&times;</span></button>
+				    		<button type="button" class="close" data-dismiss="modal" aria-label="Close" style="font-size:30px;"><span aria-hidden="true">&times;</span></button>
 				    	</div>
 				      <div class="modal-body text-center">
-				        <p style="font-size:16px;color:#26BEC9;">「KKday提醒您：記得設定成公開分享喔！」</p>
-				        <button onclick="PostToFeed()">test</button>
-				        <div class="fb-share-button" style="display:none;" id="sharebtn1" data-href="http://blueswen.github.io/kkday/psytest/tl.html" data-layout="button"></div>
-				        <div class="fb-share-button" style="display:none;" id="sharebtn2" data-href="http://blueswen.github.io/kkday/psytest/sp.html" data-layout="button"></div>
-				        <div class="fb-share-button" style="display:none;" id="sharebtn3" data-href="http://blueswen.github.io/kkday/psytest/hk.html" data-layout="button"></div>
-				        <div class="fb-share-button" style="display:none;" id="sharebtn4" data-href="http://blueswen.github.io/kkday/psytest/jp.html" data-layout="button"></div>
 				        <div id="form" style="text-align:left;">
 				        	<script type="text/javascript">var submitted=false;</script>
 				        	<iframe name="hidden_iframe" id="hidden_iframe"
 				        	style="display:none;" onload="if(submitted)
-				        	{alert('提交完成');$('#modalclose').click();}"></iframe>
+				        	{alert('「提交完成！記得將測驗結果分享至FB！」');}"></iframe>
 				        	<form action="https://docs.google.com/forms/d/1W3EgGD9PlU847Ul89b3ouPJHzQnzlPVIPqUkv9tEk3I/formResponse" method="post"
 				        	target="hidden_iframe" onsubmit="submitted=true;">
 				        		<div class="form-group">
@@ -206,6 +201,11 @@
 				        		</div>
 				        		<button type="submit" class="btn btn-default">提交</button>
 				        	</form>
+				        	<p style="font-size:16px;color:#26BEC9;">「KKday提醒您：記得設定成公開分享喔！」</p>
+				        	<div class="fb-share-button" style="display:none;" id="sharebtn1" data-href="http://blueswen.github.io/kkday/psytest/tl.html" data-layout="button"></div>
+				        	<div class="fb-share-button" style="display:none;" id="sharebtn2" data-href="http://blueswen.github.io/kkday/psytest/sp.html" data-layout="button"></div>
+				        	<div class="fb-share-button" style="display:none;" id="sharebtn3" data-href="http://blueswen.github.io/kkday/psytest/hk.html" data-layout="button"></div>
+				        	<div class="fb-share-button" style="display:none;" id="sharebtn4" data-href="http://blueswen.github.io/kkday/psytest/jp.html" data-layout="button"></div>
 				        </div>
 				      </div>
 				    </div>
@@ -314,7 +314,7 @@
 			update();
 		});
 		$(".end-linkmap").click(function(){
-			window.open("../rhetoric.html","_blank")
+			window.open("http://blueswen.github.io/kkday/","_blank")
 		})
 		$(".end-air").click(function(){
 			window.open("http://www.tigerair.com/tw/zh/","_blank")
