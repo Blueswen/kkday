@@ -203,10 +203,6 @@
 				        	</form>
 				        	<p style="font-size:16px;color:#26BEC9;">「KKday提醒您：記得設定成公開分享喔！」</p>
 				        	<button style="background:#26BEC9;" onclick="PostToFeed()">分享至FB</button>
-				        	<div class="fb-share-button" style="display:none;" id="sharebtn1" data-href="http://blueswen.github.io/kkday/psytest/tl.html" data-layout="button"></div>
-				        	<div class="fb-share-button" style="display:none;" id="sharebtn2" data-href="http://blueswen.github.io/kkday/psytest/sp.html" data-layout="button"></div>
-				        	<div class="fb-share-button" style="display:none;" id="sharebtn3" data-href="http://blueswen.github.io/kkday/psytest/hk.html" data-layout="button"></div>
-				        	<div class="fb-share-button" style="display:none;" id="sharebtn4" data-href="http://blueswen.github.io/kkday/psytest/jp.html" data-layout="button"></div>
 				        </div>
 				      </div>
 				    </div>
@@ -282,19 +278,15 @@
 				$('#entry_1924557984').attr("value",end[cur]);
 				if(cur=="e1"){
 					pictureURL = "http://blueswen.github.io/kkday/psytest/img/share-tl.png";
-					$('#sharebtn1').css("display","");
 				}
 				else if(cur=="e2"){
 					pictureURL = "http://blueswen.github.io/kkday/psytest/img/share-sp.png";
-					$('#sharebtn2').css("display","");
 				}
 				else if(cur=="e3"){
 					pictureURL = "http://blueswen.github.io/kkday/psytest/img/share-hk.png";
-					$('#sharebtn3').css("display","");
 				}
 				else if(cur=="e4"){
 					pictureURL = "http://blueswen.github.io/kkday/psytest/img/share-jp.png";
-					$('#sharebtn4').css("display","");
 				}
 				$("#"+cur).css("display","");
 				//$("#que").css("display","none");
