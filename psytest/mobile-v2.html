@@ -213,11 +213,31 @@
 	</div>
 	<div id="fb-root"></div>
 	<script>(function(d, s, id) {
+		var function PostToFeed(){};
 	  var js, fjs = d.getElementsByTagName(s)[0];
 	  if (d.getElementById(id)) return;
 	  js = d.createElement(s); js.id = id;
 	  js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.3&appId=444444312396465";
 	  fjs.parentNode.insertBefore(js, fjs);
+	  $('#sharebtn').bind("click",PostToFeed());
+		function PostToFeed() {
+      FB.ui({
+        display: 'iframe',
+        method: 'feed',
+        name: '【KKday旅行診斷室】原來我的理想畢旅在這裡？！',
+        caption:'KKday旅行綜合研究所 — 打破公式 混搭旅行新體驗',
+        description: 'KKday送你「旅行基金」與「虎航來回機票」，在一段人生歷程畢業之際，測測哪裡是你的理想畢旅目的地，即刻出發去旅行！',
+        link: 'http://blueswen.github.io/kkday/psytest',
+        picture: pictureURL,
+        show_error: true
+	    }, function(response) {
+        if (response && response.post_id) {
+            alert('已經與朋友分享囉！記得按讚才能參加抽獎哦！');
+        } else {
+            alert('分享已取消，記得分享才能參加抽獎哦！');
+   	  	}
+      });
+    }
 	}(document, 'script', 'facebook-jssdk'));</script>
 	<script type="text/javascript">
 		var data=[
@@ -265,24 +285,7 @@
 		}
 		var cur = 0;
 		var pictureURL;
-		function PostToFeed() {
-      FB.ui({
-        display: 'iframe',
-        method: 'feed',
-        name: '【KKday旅行診斷室】原來我的理想畢旅在這裡？！',
-        caption:'KKday旅行綜合研究所 — 打破公式 混搭旅行新體驗',
-        description: 'KKday送你「旅行基金」與「虎航來回機票」，在一段人生歷程畢業之際，測測哪裡是你的理想畢旅目的地，即刻出發去旅行！',
-        link: 'http://blueswen.github.io/kkday/psytest',
-        picture: pictureURL,
-        show_error: true
-	    }, function(response) {
-        if (response && response.post_id) {
-            alert('已經與朋友分享囉！記得按讚才能參加抽獎哦！');
-        } else {
-            alert('分享已取消，記得分享才能參加抽獎哦！');
-   	  	}
-      });
-    }
+		
 		function update() {
 			if(!isNaN(cur)){
 				$("#que").html(data[cur].q.text);
@@ -338,8 +341,7 @@
 		$('#myModal').on('shown.bs.modal', function () {
 		  $('#myInput').focus()
 		})
-	  	$('#sharebtn').bind("click",PostToFeed());
-		
+	  	
 	</script>
 </body>
 </html>
