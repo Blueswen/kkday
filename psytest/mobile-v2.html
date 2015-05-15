@@ -338,7 +338,8 @@
 		$('#myModal').on('shown.bs.modal', function () {
 		  $('#myInput').focus()
 		})
-		$('#sharebtn').click(PostToFeed());
+	  	$('#sharebtn').bind("click",PostToFeed());
+		
 	</script>
 </body>
 </html>
