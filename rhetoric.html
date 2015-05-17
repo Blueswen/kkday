@@ -14,7 +14,14 @@
 
 	.dst-map{
 		width: 100%;
-		cursor: pointer;
+	}
+
+	.dst-button{
+		border: 1px solid;
+		border-radius: 20px;
+		font-size: 20px;
+		padding: 5px 20px;
+		margin: 10px;
 	}
 
 	.dst-info{
@@ -137,6 +144,7 @@
 		right: 0;
 		margin: 0 10%;
 	}
+
 	</style>
 </head>
 <body>
@@ -213,8 +221,9 @@
 				</div>
 			</div>
 			<div class="col-sm-push-1 col-sm-10 col-xs-12">
-				<div id="hk" class="col-sm-6 col-xs-12" data-toggle="modal" data-target="#hkModal">
-					<img class="dst-map" src="img/dst-hk.png" onmouseover="hover(this)" onmouseout="unhover(this)">
+				<div id="hk" class="col-sm-6 col-xs-12 text-center">
+					<img class="dst-map" src="img/dst-hk.png">
+					<button class="dst-button" style="background:#9BD3C7; border:#9BD3C7;" data-toggle="modal" data-target="#hkModal">開始混搭港澳 ! </button>	
 				</div>
 				<div class="modal fade dst-modal" id="hkModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 				  <div class="modal-dialog">
@@ -310,8 +319,9 @@
 				    </div>
 				  </div>
 				</div>
-				<div id="jp" class="col-sm-6 col-xs-12" data-toggle="modal" data-target="#jpModal">
-					<img class="dst-map" src="img/dst-jp.png" onmouseover="hover(this)" onmouseout="unhover(this)">
+				<div id="jp" class="col-sm-6 col-xs-12 text-center">
+					<img class="dst-map" src="img/dst-jp.png">
+					<button class="dst-button" style="background:#F3E991; border:#F3E991;" data-toggle="modal" data-target="#jpModal">開始混搭東京 ! </button>	
 				</div>
 				<div class="modal fade dst-modal" id="jpModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 				  <div class="modal-dialog">
@@ -410,8 +420,9 @@
 				</div>
 			</div>
 			<div class="col-sm-push-1 col-sm-10 col-xs-12">
-				<div id="tl" class="col-sm-6 col-xs-12" data-toggle="modal" data-target="#tlModal">
-					<img class="dst-map" src="img/dst-tl.png" onmouseover="hover(this)" onmouseout="unhover(this)">
+				<div id="tl" class="col-sm-6 col-xs-12 text-center">
+					<img class="dst-map" src="img/dst-tl.png">
+					<button class="dst-button" style="background:#F7CBC1; border:#F7CBC1;" data-toggle="modal" data-target="#tlModal">開始混搭曼谷 ! </button>	
 				</div>
 				<div class="modal fade dst-modal" id="tlModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 				  <div class="modal-dialog">
@@ -507,8 +518,9 @@
 				    </div>
 				  </div>
 				</div>
-				<div id="sp" class="col-sm-6 col-xs-12" data-toggle="modal" data-target="#spModal">
-					<img class="dst-map" src="img/dst-sp.png" onmouseover="hover(this)" onmouseout="unhover(this)">
+				<div id="sp" class="col-sm-6 col-xs-12 text-center">
+					<img class="dst-map" src="img/dst-sp.png">
+					<button class="dst-button" style="background:#D8D779; border:#D8D779;" data-toggle="modal" data-target="#spModal">開始混搭星馬 ! </button>	
 				</div>
 				<div class="modal fade dst-modal" id="spModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 				  <div class="modal-dialog">
@@ -888,34 +900,6 @@
 		$('#girlslide').carousel({
 			interval: false
 		})
-		function hover(element) {
-			if(element.getAttribute('src')=="img/dst-jp.png"){
-				element.setAttribute('src', 'img/dst-jp-h.png');
-			}
-			else if(element.getAttribute('src')=="img/dst-sp.png"){
-				element.setAttribute('src', 'img/dst-sp-h.png');	
-			}
-			else if(element.getAttribute('src')=="img/dst-hk.png"){
-				element.setAttribute('src', 'img/dst-hk-h.png');
-			}
-			else if(element.getAttribute('src')=="img/dst-tl.png"){
-				element.setAttribute('src', 'img/dst-tl-h.png');
-			}
-		}
-		function unhover(element) {
-	    if(element.getAttribute('src')=="img/dst-jp-h.png"){
-				element.setAttribute('src', 'img/dst-jp.png');
-			}
-			else if(element.getAttribute('src')=="img/dst-sp-h.png"){
-				element.setAttribute('src', 'img/dst-sp.png');	
-			}
-			else if(element.getAttribute('src')=="img/dst-hk-h.png"){
-				element.setAttribute('src', 'img/dst-hk.png');
-			}
-			else if(element.getAttribute('src')=="img/dst-tl-h.png"){
-				element.setAttribute('src', 'img/dst-tl.png');
-			}
-		}
 	</script>
 </body>
 </html>
