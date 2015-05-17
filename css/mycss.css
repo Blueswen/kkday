@@ -114,12 +114,6 @@ section{
 		height: 20px;
 	}
 
-	#locslide .item{
-		height: 270px;
-	}
-	#solslide .item{
-		height: 270px;
-	}
 	#girlslide .modal-dialog{
 		width: 700px;
 	}
