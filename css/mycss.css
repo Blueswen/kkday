@@ -27,6 +27,14 @@
 	color: #51555A;	
 }
 
+.p14{
+	padding: 0 20px;
+	font-size: 16px;
+	line-height: 200%;
+	letter-spacing: 1px;
+	color: #8A8E8E;		
+}
+
 section{
 	width: 100%;
 	padding: 100px 0;
