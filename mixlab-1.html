@@ -10,7 +10,7 @@
 	<style type="text/css">
 		.auto-resizable-iframe {
 		  max-width: 1024px;
-		  margin: 30px auto 0px;
+		  padding: 30px auto 0px;
 		}
 
 		.auto-resizable-iframe > div {
@@ -28,7 +28,8 @@
 		}
 
 		#mix-content img{
-			width: 100%;
+			width: 95%;
+			margin:50px 2.5%;
 		}
 
 		.mix-title1{
@@ -36,12 +37,16 @@
 			color: #51555A;
 			letter-spacing: 1px;
 			font-weight: 700;
+			padding:50px 0 10px;
+			text-align: center;
 		}
 
 		.mix-subtitle{
 			font-size: 18px;
 			color: #8A8E8E;
 			letter-spacing: 2px;
+			padding-bottom: 50px;
+			text-align: center;
 		}
 
 		.mix-title2{
@@ -49,6 +54,7 @@
 			color: #51555A;
 			letter-spacing: 1px;
 			font-weight: 700;
+			padding:30px 0; 
 		}
 
 		.mix-subtitle2{
@@ -56,13 +62,23 @@
 			color: #51555A;
 			letter-spacing: 1px;
 			font-weight: 700;
+			padding: 20px 0 ;
 		}
 
 		.pic-link{
+			padding-top: 50px;
+			text-align: center;
+		}
+
+		.pic-link a{
 			font-size: 22px;
 			color: #51555A;
 			letter-spacing: 1px;
 			font-weight: 700;
+		}
+
+		.article{
+			padding:0 5%;
 		}
 	</style>
 </head>
@@ -90,7 +106,7 @@
         </div><!--/.nav-collapse -->
       </div>
     </nav>
-    <section id="video">
+    <section id="mix-content" class="row">
     	<div class="row">
     		<div class="col-sm-push-1 col-sm-10 col-xs-12">
     			<div class="auto-resizable-iframe">
@@ -100,8 +116,6 @@
     			</div>
     		</div>
     	</div>
-    </section>
-    <section id="mix-content" class="row">
     	<div class="col-sm-push-1 col-sm-10 col-xs-12">
     		<div class="article col-xs-12">
     			<p class="mix-title1">行動藝術 X 百吻巴黎 楊雅晴</p>
@@ -140,8 +154,12 @@
     			<p class="p18">害怕的愈多，能做的愈少，「這句話真的是被逼出來的，那個時候我做了百吻巴黎這件事情，就很多人說：『欸，你真的很有種耶！怎麼會幹這種事』、『你這樣嫁不出去了』、『你這樣子很髒耶』」，原來，開始一件事情，踏出一段旅程需要這麼大的勇氣，每一個發出疑問的人身上都背著好重好重好重的恐懼，「我才意識到，還好我沒有那麼多的害怕，我才有辦法做完百吻巴黎這個計畫」。</p>
     		</div>
     		<div>
-    			<img class="col-xs-12 col-sm-6" src="img/mixlab-profile1-4.jpg">
-    			<img class="col-xs-12 col-sm-6" src="img/mixlab-profile1-5.jpg">
+    			<div class="col-xs-12 col-sm-6">
+	    			<img src="img/mixlab-profile1-4.jpg">
+    			</div>
+    			<div class="col-xs-12 col-sm-6">
+    				<img src="img/mixlab-profile1-5.jpg">
+    			</div>
     		</div>
 
     		<div class="article col-xs-12">
@@ -161,12 +179,13 @@
     		</div>
     		<div>
     			<div class="col-xs-12 col-sm-6">
-    				<a class="pic-link" href="https://www.kkday.com/zh-tw/product/1168" target="_blank">塞納河畔夏夜晚風・巴黎單車夜遊</a>
-    				<img src="img/mixlab-profile1-7.jpg">
+    				
+    				<p class="pic-link"><a href="https://www.kkday.com/zh-tw/product/1168" target="_blank">塞納河畔夏夜晚風・巴黎單車夜遊</a></p>
+    				<img style="margin-top:0;" src="img/mixlab-profile1-7.jpg">
     			</div>
     			<div class="col-xs-12 col-sm-6">
-    				<a class="pic-link" href="https://www.kkday.com/zh-tw/product/1168" target="_blank">最道地的法式甜點・第一次做馬卡龍就上手</a>
-    				<img src="img/mixlab-profile1-8.jpg">
+    				<p class="pic-link" ><a href="https://www.kkday.com/zh-tw/product/1168" target="_blank">最道地的法式甜點・第一次做馬卡龍就上手</a></p>
+    				<img style="margin-top:0;" src="img/mixlab-profile1-8.jpg">
     			</div>
     		</div>
     		<div class="article col-xs-12">
@@ -175,6 +194,7 @@
     		</div>
     	</div>
     </section>
+		<hr>
     <section id="end" class="text-center" style="padding:30px 0;">
 			<p style="font-size:16px;letter-spacing:1px;color:#51555A;">KKday 旅行綜合研究所</p>
 			<p style="font-size:16px;letter-spacing:1px;color:#898D8D;">打破旅行公式 混搭你的旅行新體驗</p>
