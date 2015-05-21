@@ -9,8 +9,8 @@ body{font-family:"Helvetica Neue",Helvetica,Arial,"微軟正黑體","Microsoft J
 .carousel-control:focus,.carousel-control:hover{color:#fff;text-decoration:none;filter:alpha(opacity=90);outline:0;opacity:.9}
 .carousel-indicators li{display:inline-block;width:15px;height:15px;margin:1px 5px;text-indent:-999px;cursor:pointer;background-color:#000 \9;background-color:rgba(0,0,0,0);border:1px solid gray;border-radius:10px}
 .carousel-indicators .active{width:17px;height:17px;margin:0 5px;background-color:gray}
-.carousel-caption{font-size:12px;line-height:200%;position:absolute;right:15%;bottom:20px;left:15%;z-index:10;padding-top:20px;padding-bottom:20px;color:#51555A;text-align:left;}
-@media screen and (min-width:768px){.carousel-caption{right:18%;left:18%;padding-bottom:30px}.carousel-indicators{bottom:20px}}
+.carousel-caption{font-size:12px;line-height:200%;position:absolute;right:15%;bottom:20px;left:15%;z-index:10;padding-top:20px;padding-bottom:20px;color:#51555A;text-align:left;text-shadow:none;}
+@media screen and (min-width:768px){.carousel-caption{right:18%;left:18%;padding-bottom:30px;pxtext-shadow:none;}.carousel-indicators{bottom:20px}}
 .carousel-control.left{background-image:none}
 .carousel-control.right{right:0;left:auto;background-image:none}
 
