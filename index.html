@@ -38,6 +38,26 @@
 	  font-size: 20px;
 	  line-height: 150%;
 	}
+	 
+	#test:hover span.text-content {
+	  opacity: 1;
+	}
+
+	span.text-content {
+	  background: rgba(0,0,0,0.5);
+	  color: white;
+	  position: absolute;
+	  opacity: 0;
+	  display: block;
+	  width: 80%;
+	  height: 88%;
+	  left: 10%;
+	  top: 6%;
+	  -webkit-transition: opacity 500ms;
+	  -moz-transition: opacity 500ms;
+	  -o-transition: opacity 500ms;
+	  transition: opacity 500ms;
+	}
 	</style>
 </head>
 <body>
@@ -130,8 +150,9 @@
 			</div>
 			<div class="row">
 				<div class="col-sm-push-1 col-sm-10 col-xs-12">
-					<div class="col-sm-6 col-xs-12">
-						<img style="cursor:pointer;padding:5% 10%;" width="100%" src="img/index-f1.png" onmouseover="hover(this)" onmouseout="unhover(this)">
+					<div id="test" class="col-sm-6 col-xs-12">
+						<img style="cursor:pointer;padding:5% 10%;" width="100%" src="img/index-f1.png">
+						<span class="text-content"><span>Place Name</span></span>
 					</div>
 					<div class="col-sm-6 col-xs-12">
 						<img style="cursor:pointer;padding:5% 10%;" width="100%" src="img/index-f2.png" onmouseover="hover(this)" onmouseout="unhover(this)">
